@@ -1,0 +1,330 @@
+[
+  {
+    "id": "plot_001",
+    "type": "plot_positions",
+    "skills": [
+      "direction_mapping"
+    ],
+    "difficulty": 1,
+    "prompt": "A sits immediately to the right of B.",
+    "entities": [
+      "A",
+      "B"
+    ],
+    "slots": 7,
+    "constraint": {
+      "kind": "relative",
+      "subject": "A",
+      "reference": "B",
+      "offset": 1
+    },
+    "explanation": "A must be exactly one position to the right of B.",
+    "hints": [
+      "Place B first as the reference.",
+      "A must go on the immediate right side of B.",
+      "There must be no empty slot between B and A."
+    ],
+    "estimatedTime": 15
+  },
+  {
+    "id": "plot_002",
+    "type": "plot_positions",
+    "skills": [
+      "direction_mapping"
+    ],
+    "difficulty": 1,
+    "prompt": "P sits third to the left of Q.",
+    "entities": [
+      "P",
+      "Q"
+    ],
+    "slots": 9,
+    "constraint": {
+      "kind": "relative",
+      "subject": "P",
+      "reference": "Q",
+      "offset": -3
+    },
+    "explanation": "P must be three positions to the left of Q.",
+    "hints": [
+      "Place Q as the reference.",
+      "Move three positions left from Q.",
+      "Put P on that slot."
+    ],
+    "estimatedTime": 18
+  },
+  {
+    "id": "plot_003",
+    "type": "plot_positions",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 2,
+    "prompt": "R sits second to the right of S.",
+    "entities": [
+      "R",
+      "S"
+    ],
+    "slots": 8,
+    "constraint": {
+      "kind": "relative",
+      "subject": "R",
+      "reference": "S",
+      "offset": 2
+    },
+    "explanation": "R is two positions to S's right. The absolute slots do not matter, only the relationship.",
+    "hints": [
+      "S is the reference.",
+      "Count two positions toward the right.",
+      "Place R there."
+    ],
+    "estimatedTime": 18
+  },
+  {
+    "id": "plot_004",
+    "type": "plot_positions",
+    "skills": [
+      "gap_calculation"
+    ],
+    "difficulty": 1,
+    "prompt": "Three persons sit between A and B.",
+    "entities": [
+      "A",
+      "B"
+    ],
+    "slots": 9,
+    "constraint": {
+      "kind": "distance",
+      "a": "A",
+      "b": "B",
+      "distance": 4
+    },
+    "explanation": "Three positions strictly between A and B means their positions differ by four.",
+    "hints": [
+      "Either A or B can be on the left.",
+      "Leave exactly three slots between the two tokens.",
+      "The endpoint positions must differ by four."
+    ],
+    "estimatedTime": 18
+  },
+  {
+    "id": "plot_005",
+    "type": "plot_positions",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 2,
+    "prompt": "M sits fourth to the left of N.",
+    "entities": [
+      "M",
+      "N"
+    ],
+    "slots": 10,
+    "constraint": {
+      "kind": "relative",
+      "subject": "M",
+      "reference": "N",
+      "offset": -4
+    },
+    "explanation": "M must be four positions to the left of N.",
+    "hints": [
+      "N is the reference.",
+      "Move four slots left from N.",
+      "Place M there."
+    ],
+    "estimatedTime": 20
+  },
+  {
+    "id": "plot_006",
+    "type": "plot_positions",
+    "skills": [
+      "gap_calculation"
+    ],
+    "difficulty": 1,
+    "prompt": "No person sits between C and D.",
+    "entities": [
+      "C",
+      "D"
+    ],
+    "slots": 7,
+    "constraint": {
+      "kind": "distance",
+      "a": "C",
+      "b": "D",
+      "distance": 1
+    },
+    "explanation": "No person between them means C and D are adjacent. Either left-right order is valid.",
+    "hints": [
+      "Order is not specified.",
+      "The two tokens must touch neighboring slots.",
+      "Place them with zero slots between."
+    ],
+    "estimatedTime": 12
+  },
+  {
+    "id": "plot_007",
+    "type": "plot_positions",
+    "skills": [
+      "direction_mapping"
+    ],
+    "difficulty": 2,
+    "prompt": "X sits fifth to the left of Y.",
+    "entities": [
+      "X",
+      "Y"
+    ],
+    "slots": 11,
+    "constraint": {
+      "kind": "relative",
+      "subject": "X",
+      "reference": "Y",
+      "offset": -5
+    },
+    "explanation": "X must be exactly five positions to the left of Y.",
+    "hints": [
+      "Y is the reference.",
+      "Count five slots to the left.",
+      "Place X on the fifth slot."
+    ],
+    "estimatedTime": 22
+  },
+  {
+    "id": "plot_008",
+    "type": "plot_positions",
+    "skills": [
+      "gap_calculation"
+    ],
+    "difficulty": 2,
+    "prompt": "Exactly two persons sit between P and Q.",
+    "entities": [
+      "P",
+      "Q"
+    ],
+    "slots": 8,
+    "constraint": {
+      "kind": "distance",
+      "a": "P",
+      "b": "Q",
+      "distance": 3
+    },
+    "explanation": "Two people between P and Q means the endpoint positions differ by three.",
+    "hints": [
+      "Either token may be on the left.",
+      "Leave exactly two slots between them.",
+      "Their positions differ by three."
+    ],
+    "estimatedTime": 16
+  },
+  {
+    "id": "plot_009",
+    "type": "plot_positions",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 2,
+    "prompt": "K sits third to the right of L.",
+    "entities": [
+      "K",
+      "L"
+    ],
+    "slots": 9,
+    "constraint": {
+      "kind": "relative",
+      "subject": "K",
+      "reference": "L",
+      "offset": 3
+    },
+    "explanation": "K must be three positions to the right of L.",
+    "hints": [
+      "L is the reference person.",
+      "Move three slots right from L.",
+      "Place K there."
+    ],
+    "estimatedTime": 18
+  },
+  {
+    "id": "plot_010",
+    "type": "plot_positions",
+    "skills": [
+      "gap_calculation"
+    ],
+    "difficulty": 2,
+    "prompt": "Five persons sit between H and J.",
+    "entities": [
+      "H",
+      "J"
+    ],
+    "slots": 12,
+    "constraint": {
+      "kind": "distance",
+      "a": "H",
+      "b": "J",
+      "distance": 6
+    },
+    "explanation": "Five positions strictly between H and J creates a positional distance of six.",
+    "hints": [
+      "The order of H and J is not fixed.",
+      "Leave five slots strictly between them.",
+      "Their slot numbers must differ by six."
+    ],
+    "estimatedTime": 20
+  },
+  {
+    "id": "plot_011",
+    "type": "plot_positions",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 3,
+    "prompt": "B is seventh to the left of A.",
+    "entities": [
+      "B",
+      "A"
+    ],
+    "slots": 13,
+    "constraint": {
+      "kind": "relative",
+      "subject": "B",
+      "reference": "A",
+      "offset": -7
+    },
+    "explanation": "B must be seven positions to the left of A.",
+    "hints": [
+      "A is the reference.",
+      "Move seven positions toward the left.",
+      "Place B there."
+    ],
+    "estimatedTime": 24
+  },
+  {
+    "id": "plot_012",
+    "type": "plot_positions",
+    "skills": [
+      "gap_calculation"
+    ],
+    "difficulty": 3,
+    "prompt": "Exactly six seats lie strictly between T and U.",
+    "entities": [
+      "T",
+      "U"
+    ],
+    "slots": 13,
+    "constraint": {
+      "kind": "distance",
+      "a": "T",
+      "b": "U",
+      "distance": 7
+    },
+    "explanation": "Six slots strictly between T and U means their positions differ by seven.",
+    "hints": [
+      "Either order is valid.",
+      "Leave six empty slots between the tokens.",
+      "The endpoint distance is seven."
+    ],
+    "estimatedTime": 22
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gap_calculation",
+    "name": "Gap Calculation",
+    "category": "atomic_reasoning",
+    "description": "Convert people-between language and positional distance accurately.",
+    "level": 2
+  },
+  {
+    "id": "direction_mapping",
+    "name": "Direction Mapping",
+    "category": "statement_decoding",
+    "description": "Map left/right relationships without reversal.",
+    "level": 1
+  },
+  {
+    "id": "reference_tracking",
+    "name": "Reference Tracking",
+    "category": "statement_decoding",
+    "description": "Maintain the correct reference entity.",
+    "level": 1
+  },
+  {
+    "id": "chain_inference",
+    "name": "Chain Inference",
+    "category": "multi_clue",
+    "description": "Combine linked relationships to derive new facts.",
+    "level": 3
+  }
+]

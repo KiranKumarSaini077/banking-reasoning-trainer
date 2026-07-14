@@ -1,0 +1,332 @@
+[
+  {
+    "id": "po_linear_001",
+    "title": "Eight-Person Linear Set",
+    "category": "linear_seating",
+    "difficulty": 4,
+    "slots": 8,
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "skills": [
+      "independent_puzzle_solving",
+      "constraint_integration",
+      "clue_prioritization",
+      "time_management"
+    ],
+    "estimatedTime": 240,
+    "clues": [
+      "B sits second to the left of D.",
+      "A sits immediately to the left of B.",
+      "F sits second to the right of D.",
+      "G sits immediately to the right of F.",
+      "C sits immediately to the right of D.",
+      "H sits at the extreme right end."
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "D",
+        "offset": -2,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "offset": -1,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "D",
+        "offset": 2,
+        "clueIndex": 2
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "F",
+        "offset": 1,
+        "clueIndex": 3
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "D",
+        "offset": 1,
+        "clueIndex": 4
+      },
+      {
+        "kind": "fixed",
+        "entity": "H",
+        "position": 7,
+        "clueIndex": 5
+      }
+    ],
+    "answers": [
+      {
+        "id": "q1",
+        "prompt": "Who sits at the extreme left end?",
+        "type": "entity_at",
+        "position": 0,
+        "answer": "A"
+      },
+      {
+        "id": "q2",
+        "prompt": "How many persons sit between B and F?",
+        "type": "between",
+        "a": "B",
+        "b": "F",
+        "answer": 3
+      },
+      {
+        "id": "q3",
+        "prompt": "Who sits immediately to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "offset": -1,
+        "answer": "G"
+      }
+    ],
+    "explanation": "D anchors position 4. B and A form the left chain, C is immediately right of D, F and G form the right chain, H is fixed at the extreme right, and E fills the only remaining position."
+  },
+  {
+    "id": "po_linear_002",
+    "title": "Nine-Person Mixed Constraint Set",
+    "category": "linear_seating",
+    "difficulty": 5,
+    "slots": 9,
+    "entities": [
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R"
+    ],
+    "skills": [
+      "independent_puzzle_solving",
+      "negative_constraint_handling",
+      "constraint_integration",
+      "time_management"
+    ],
+    "estimatedTime": 300,
+    "clues": [
+      "K sits third to the left of M.",
+      "J sits immediately to the left of K.",
+      "O sits second to the right of M.",
+      "P sits immediately to the right of O.",
+      "N sits immediately to the right of M.",
+      "Q sits at the extreme right end.",
+      "L sits immediately to the left of M."
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "K",
+        "reference": "M",
+        "offset": -3,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "J",
+        "reference": "K",
+        "offset": -1,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "O",
+        "reference": "M",
+        "offset": 2,
+        "clueIndex": 2
+      },
+      {
+        "kind": "relative",
+        "subject": "P",
+        "reference": "O",
+        "offset": 1,
+        "clueIndex": 3
+      },
+      {
+        "kind": "relative",
+        "subject": "N",
+        "reference": "M",
+        "offset": 1,
+        "clueIndex": 4
+      },
+      {
+        "kind": "fixed",
+        "entity": "Q",
+        "position": 8,
+        "clueIndex": 5
+      },
+      {
+        "kind": "relative",
+        "subject": "L",
+        "reference": "M",
+        "offset": -1,
+        "clueIndex": 6
+      }
+    ],
+    "answers": [
+      {
+        "id": "q1",
+        "prompt": "Who sits at position 5?",
+        "type": "entity_at",
+        "position": 4,
+        "answer": "M"
+      },
+      {
+        "id": "q2",
+        "prompt": "How many persons sit between J and M?",
+        "type": "between",
+        "a": "J",
+        "b": "M",
+        "answer": 3
+      },
+      {
+        "id": "q3",
+        "prompt": "Who sits immediately to the right of O?",
+        "type": "relative_entity",
+        "reference": "O",
+        "offset": 1,
+        "answer": "P"
+      }
+    ],
+    "explanation": "M anchors the center. K-J forms the far-left chain, L and N sit immediately around M, O-P forms the right chain, Q is fixed at the extreme right, and R fills the remaining position."
+  },
+  {
+    "id": "po_linear_003",
+    "title": "Ten-Person Speed Set",
+    "category": "linear_seating",
+    "difficulty": 5,
+    "slots": 10,
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "skills": [
+      "independent_puzzle_solving",
+      "constraint_integration",
+      "working_memory",
+      "time_management"
+    ],
+    "estimatedTime": 330,
+    "clues": [
+      "E sits fifth from the right end.",
+      "C sits second to the left of E.",
+      "B sits immediately to the left of C.",
+      "A sits immediately to the left of B.",
+      "H sits immediately to the right of G.",
+      "I sits immediately to the right of H.",
+      "D sits immediately to the left of E.",
+      "F sits immediately to the right of E."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "E",
+        "position": 5,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "E",
+        "offset": -2,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "C",
+        "offset": -1,
+        "clueIndex": 2
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "offset": -1,
+        "clueIndex": 3
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "G",
+        "offset": 1,
+        "clueIndex": 4
+      },
+      {
+        "kind": "relative",
+        "subject": "I",
+        "reference": "H",
+        "offset": 1,
+        "clueIndex": 5
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "E",
+        "offset": -1,
+        "clueIndex": 6
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "E",
+        "offset": 1,
+        "clueIndex": 7
+      }
+    ],
+    "answers": [
+      {
+        "id": "q1",
+        "prompt": "Who sits third to the left of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "offset": -3,
+        "answer": "B"
+      },
+      {
+        "id": "q2",
+        "prompt": "How many persons sit between C and G?",
+        "type": "between",
+        "a": "C",
+        "b": "G",
+        "answer": 3
+      },
+      {
+        "id": "q3",
+        "prompt": "Who sits at the extreme right end?",
+        "type": "entity_at",
+        "position": 9,
+        "answer": "I"
+      }
+    ],
+    "explanation": "E anchors position 6. A-B-C forms the left chain, D and F sit immediately around E, G-H-I forms the right chain, and J fills the remaining position."
+  }
+]
