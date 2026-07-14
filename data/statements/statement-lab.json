@@ -1,0 +1,444 @@
+[
+  {
+    "id": "stmt_dir_001",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "direction_mapping",
+    "skills": [
+      "direction_mapping"
+    ],
+    "difficulty": 1,
+    "prompt": "A sits immediately to the right of B.",
+    "question": "Which normalized relationship is correct?",
+    "options": [
+      "RIGHT_OF(A, B, 1)",
+      "LEFT_OF(A, B, 1)",
+      "RIGHT_OF(B, A, 1)",
+      "NOT_ADJACENT(A, B)"
+    ],
+    "correctAnswer": "RIGHT_OF(A, B, 1)",
+    "explanation": "A is the subject being located. B is the reference. A is one position to B's right.",
+    "hints": [
+      "Identify who is being located and who is the reference.",
+      "Keep the statement order: A relative to B.",
+      "Immediate means a distance of 1.",
+      "The normalized form is RIGHT_OF(A, B, 1)."
+    ],
+    "errorMap": {
+      "LEFT_OF(A, B, 1)": "DIRECTION_REVERSAL",
+      "RIGHT_OF(B, A, 1)": "REFERENCE_CONFUSION",
+      "NOT_ADJACENT(A, B)": "MISREAD_RELATION"
+    },
+    "estimatedTime": 12,
+    "tags": [
+      "right",
+      "immediate",
+      "normalization"
+    ]
+  },
+  {
+    "id": "stmt_dir_002",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "direction_mapping",
+    "skills": [
+      "direction_mapping"
+    ],
+    "difficulty": 1,
+    "prompt": "P sits third to the left of Q.",
+    "question": "Which normalized relationship is correct?",
+    "options": [
+      "LEFT_OF(P, Q, 3)",
+      "RIGHT_OF(P, Q, 3)",
+      "LEFT_OF(Q, P, 3)",
+      "LEFT_OF(P, Q, 2)"
+    ],
+    "correctAnswer": "LEFT_OF(P, Q, 3)",
+    "explanation": "P is located relative to Q. P is three positions to Q's left.",
+    "hints": [
+      "P is the subject.",
+      "Q is the reference.",
+      "Third to the left means distance 3.",
+      "Use LEFT_OF(P, Q, 3)."
+    ],
+    "errorMap": {
+      "RIGHT_OF(P, Q, 3)": "DIRECTION_REVERSAL",
+      "LEFT_OF(Q, P, 3)": "REFERENCE_CONFUSION",
+      "LEFT_OF(P, Q, 2)": "POSITION_COUNT_ERROR"
+    },
+    "estimatedTime": 12,
+    "tags": [
+      "left",
+      "nth_position",
+      "normalization"
+    ]
+  },
+  {
+    "id": "stmt_rev_001",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "reference_reversal",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 2,
+    "prompt": "R sits second to the right of S.",
+    "question": "Which statement expresses the same relationship from S's perspective?",
+    "options": [
+      "S sits second to the left of R.",
+      "S sits second to the right of R.",
+      "R sits second to the left of S.",
+      "S sits immediately to the left of R."
+    ],
+    "correctAnswer": "S sits second to the left of R.",
+    "explanation": "Reversing the reference swaps both the entities and the direction, while preserving the distance.",
+    "hints": [
+      "Now describe S relative to R.",
+      "The distance remains 2.",
+      "Right becomes left when the reference is reversed.",
+      "S is second to the left of R."
+    ],
+    "errorMap": {
+      "S sits second to the right of R.": "DIRECTION_REVERSAL",
+      "R sits second to the left of S.": "REFERENCE_CONFUSION",
+      "S sits immediately to the left of R.": "POSITION_COUNT_ERROR"
+    },
+    "estimatedTime": 15,
+    "tags": [
+      "reversal",
+      "reference"
+    ]
+  },
+  {
+    "id": "stmt_gap_001",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "gap_language",
+    "skills": [
+      "gap_calculation",
+      "language_decoding"
+    ],
+    "difficulty": 1,
+    "prompt": "Three persons sit between A and B.",
+    "question": "Which representation is correct?",
+    "options": [
+      "ABS_POSITION_DISTANCE(A, B) = 4",
+      "ABS_POSITION_DISTANCE(A, B) = 3",
+      "A and B are adjacent",
+      "RIGHT_OF(A, B, 3)"
+    ],
+    "correctAnswer": "ABS_POSITION_DISTANCE(A, B) = 4",
+    "explanation": "Three people between the endpoints means their position numbers differ by four.",
+    "hints": [
+      "Separate gap count from positional distance.",
+      "Three occupied positions lie strictly between the endpoints.",
+      "Distance equals people between plus one.",
+      "The positional distance is 4."
+    ],
+    "errorMap": {
+      "ABS_POSITION_DISTANCE(A, B) = 3": "GAP_MISCOUNT",
+      "A and B are adjacent": "MISREAD_RELATION",
+      "RIGHT_OF(A, B, 3)": "INVALID_ASSUMPTION"
+    },
+    "estimatedTime": 12,
+    "tags": [
+      "gap",
+      "normalization"
+    ]
+  },
+  {
+    "id": "stmt_eq_001",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "equivalent_statement",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 2,
+    "prompt": "M sits fourth to the left of N.",
+    "question": "Which statement is logically equivalent?",
+    "options": [
+      "N sits fourth to the right of M.",
+      "N sits fourth to the left of M.",
+      "M sits fourth to the right of N.",
+      "Three persons sit between M and N, so direction is irrelevant."
+    ],
+    "correctAnswer": "N sits fourth to the right of M.",
+    "explanation": "If M is four positions left of N, then N is four positions right of M.",
+    "hints": [
+      "Reverse the viewpoint.",
+      "Keep the distance unchanged.",
+      "Reverse left to right.",
+      "N is fourth to the right of M."
+    ],
+    "errorMap": {
+      "N sits fourth to the left of M.": "DIRECTION_REVERSAL",
+      "M sits fourth to the right of N.": "REFERENCE_CONFUSION",
+      "Three persons sit between M and N, so direction is irrelevant.": "INVALID_ASSUMPTION"
+    },
+    "estimatedTime": 14,
+    "tags": [
+      "equivalence",
+      "reversal"
+    ]
+  },
+  {
+    "id": "stmt_ref_001",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "reference_identification",
+    "skills": [
+      "reference_tracking"
+    ],
+    "difficulty": 1,
+    "prompt": "T is seated two places to the left of U.",
+    "question": "Which entity is the reference object used to locate T?",
+    "options": [
+      "U",
+      "T",
+      "Both equally",
+      "Cannot be determined"
+    ],
+    "correctAnswer": "U",
+    "explanation": "The phrase locates T relative to U. Therefore U is the reference entity.",
+    "hints": [
+      "Ask: T is located relative to whom?",
+      "The entity after 'of' is the reference here.",
+      "T's location is defined using U.",
+      "U is the reference."
+    ],
+    "errorMap": {
+      "T": "REFERENCE_CONFUSION",
+      "Both equally": "REFERENCE_CONFUSION",
+      "Cannot be determined": "MISREAD_RELATION"
+    },
+    "estimatedTime": 9,
+    "tags": [
+      "reference",
+      "language"
+    ]
+  },
+  {
+    "id": "stmt_bad_001",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "representation_checking",
+    "skills": [
+      "direction_mapping",
+      "reference_tracking"
+    ],
+    "difficulty": 2,
+    "prompt": "C sits immediately to the left of D.",
+    "question": "A learner writes RIGHT_OF(C, D, 1). What is wrong?",
+    "options": [
+      "The direction is reversed.",
+      "The reference entity is wrong.",
+      "The distance should be 2.",
+      "Nothing is wrong."
+    ],
+    "correctAnswer": "The direction is reversed.",
+    "explanation": "C is left of D, so the correct representation is LEFT_OF(C, D, 1).",
+    "hints": [
+      "Check subject and reference first.",
+      "C relative to D is correctly ordered.",
+      "Now inspect the direction.",
+      "RIGHT_OF should be LEFT_OF."
+    ],
+    "errorMap": {
+      "The reference entity is wrong.": "REFERENCE_CONFUSION",
+      "The distance should be 2.": "POSITION_COUNT_ERROR",
+      "Nothing is wrong.": "DIRECTION_REVERSAL"
+    },
+    "estimatedTime": 11,
+    "tags": [
+      "error_detection",
+      "left"
+    ]
+  },
+  {
+    "id": "stmt_dir_003",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "direction_mapping",
+    "skills": [
+      "direction_mapping"
+    ],
+    "difficulty": 2,
+    "prompt": "X is fifth from the left of Y.",
+    "question": "Assuming this means X is five positions to Y's left, choose the normalized form.",
+    "options": [
+      "LEFT_OF(X, Y, 5)",
+      "RIGHT_OF(X, Y, 5)",
+      "LEFT_OF(Y, X, 5)",
+      "LEFT_OF(X, Y, 4)"
+    ],
+    "correctAnswer": "LEFT_OF(X, Y, 5)",
+    "explanation": "Under the stated interpretation, X is the subject, Y is the reference, the direction is left, and the distance is five.",
+    "hints": [
+      "Use the interpretation explicitly provided.",
+      "Subject: X. Reference: Y.",
+      "Direction: left. Distance: 5.",
+      "LEFT_OF(X, Y, 5)."
+    ],
+    "errorMap": {
+      "RIGHT_OF(X, Y, 5)": "DIRECTION_REVERSAL",
+      "LEFT_OF(Y, X, 5)": "REFERENCE_CONFUSION",
+      "LEFT_OF(X, Y, 4)": "POSITION_COUNT_ERROR"
+    },
+    "estimatedTime": 14,
+    "tags": [
+      "left",
+      "normalization"
+    ]
+  },
+  {
+    "id": "stmt_gap_002",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "gap_language",
+    "skills": [
+      "gap_calculation",
+      "language_decoding"
+    ],
+    "difficulty": 2,
+    "prompt": "The absolute difference between the positions of H and J is 6.",
+    "question": "Which statement is equivalent?",
+    "options": [
+      "Five persons sit between H and J.",
+      "Six persons sit between H and J.",
+      "H sits sixth to the right of J only.",
+      "H and J must face north."
+    ],
+    "correctAnswer": "Five persons sit between H and J.",
+    "explanation": "A positional difference of six leaves five positions strictly between the endpoints. No direction is implied.",
+    "hints": [
+      "Convert distance to gap count.",
+      "Subtract one.",
+      "Do not invent a direction.",
+      "Five persons sit between them."
+    ],
+    "errorMap": {
+      "Six persons sit between H and J.": "DISTANCE_GAP_CONFUSION",
+      "H sits sixth to the right of J only.": "INVALID_ASSUMPTION",
+      "H and J must face north.": "INVALID_ASSUMPTION"
+    },
+    "estimatedTime": 14,
+    "tags": [
+      "gap",
+      "equivalence"
+    ]
+  },
+  {
+    "id": "stmt_rev_002",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "reference_reversal",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 3,
+    "prompt": "B is seventh to the left of A.",
+    "question": "Complete the reverse relationship: A is ______.",
+    "options": [
+      "seventh to the right of B",
+      "seventh to the left of B",
+      "sixth to the right of B",
+      "immediately to the right of B"
+    ],
+    "correctAnswer": "seventh to the right of B",
+    "explanation": "Reversing the relationship swaps the entities and reverses the direction. The distance remains seven.",
+    "hints": [
+      "Locate A relative to B.",
+      "Reverse left to right.",
+      "Preserve seven.",
+      "A is seventh to the right of B."
+    ],
+    "errorMap": {
+      "seventh to the left of B": "DIRECTION_REVERSAL",
+      "sixth to the right of B": "POSITION_COUNT_ERROR",
+      "immediately to the right of B": "POSITION_COUNT_ERROR"
+    },
+    "estimatedTime": 13,
+    "tags": [
+      "reversal",
+      "distance"
+    ]
+  },
+  {
+    "id": "stmt_eq_002",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "equivalent_statement",
+    "skills": [
+      "gap_calculation",
+      "language_decoding"
+    ],
+    "difficulty": 3,
+    "prompt": "Exactly two seats lie strictly between P and Q.",
+    "question": "Which mathematical relationship is equivalent?",
+    "options": [
+      "|pos(P) \u2212 pos(Q)| = 3",
+      "|pos(P) \u2212 pos(Q)| = 2",
+      "|pos(P) \u2212 pos(Q)| = 1",
+      "pos(P) = pos(Q)"
+    ],
+    "correctAnswer": "|pos(P) \u2212 pos(Q)| = 3",
+    "explanation": "Two positions strictly between the endpoints means the endpoint positions differ by three.",
+    "hints": [
+      "Count the spaces between endpoints.",
+      "Convert between-count to positional distance.",
+      "Add one.",
+      "The absolute difference is 3."
+    ],
+    "errorMap": {
+      "|pos(P) \u2212 pos(Q)| = 2": "GAP_MISCOUNT",
+      "|pos(P) \u2212 pos(Q)| = 1": "GAP_MISCOUNT",
+      "pos(P) = pos(Q)": "MISREAD_RELATION"
+    },
+    "estimatedTime": 15,
+    "tags": [
+      "symbolic",
+      "gap"
+    ]
+  },
+  {
+    "id": "stmt_bad_002",
+    "type": "statement_decoding",
+    "category": "linear_seating",
+    "subcategory": "representation_checking",
+    "skills": [
+      "reference_tracking",
+      "direction_mapping"
+    ],
+    "difficulty": 3,
+    "prompt": "Statement: K sits third to the right of L. Representation: RIGHT_OF(L, K, 3).",
+    "question": "Choose the best diagnosis.",
+    "options": [
+      "Reference/subject order is reversed.",
+      "Direction alone is reversed.",
+      "Distance is miscounted.",
+      "The representation is correct."
+    ],
+    "correctAnswer": "Reference/subject order is reversed.",
+    "explanation": "The statement locates K relative to L, so the correct form is RIGHT_OF(K, L, 3).",
+    "hints": [
+      "Identify the subject being located.",
+      "K is located relative to L.",
+      "Compare that order with the representation.",
+      "K and L were swapped."
+    ],
+    "errorMap": {
+      "Direction alone is reversed.": "DIRECTION_REVERSAL",
+      "Distance is miscounted.": "POSITION_COUNT_ERROR",
+      "The representation is correct.": "REFERENCE_CONFUSION"
+    },
+    "estimatedTime": 15,
+    "tags": [
+      "error_detection",
+      "reference"
+    ]
+  }
+]

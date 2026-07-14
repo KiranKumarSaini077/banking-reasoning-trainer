@@ -1,0 +1,11 @@
+import{storage}from'../core/storage.js';
+const LABEL={GAP_MISCOUNT:'Gap miscount',DIRECTION_REVERSAL:'Direction reversal',REFERENCE_CONFUSION:'Reference confusion',MISSED_INFERENCE:'Missed inference',DISTANCE_GAP_CONFUSION:'Distance vs gap confusion',UNKNOWN_ERROR:'Unclassified error'};
+export async function renderMistakeLab(){
+ document.querySelector('#page-title').textContent='Mistake Lab';document.querySelector('#page-eyebrow').textContent='DIAGNOSE → RETRAIN';
+ const view=document.querySelector('#view');let attempts=[];try{attempts=await storage.getAll('attempts')}catch(e){console.error(e)}
+ const failed=attempts.filter(a=>!a.correct),groups=failed.reduce((m,a)=>{const k=a.errorType||'UNKNOWN_ERROR';(m[k]??=[]).push(a);return m},{});
+ const ranked=Object.entries(groups).sort((a,b)=>b[1].length-a[1].length);
+ if(!ranked.length){view.innerHTML='<div class="card empty-state"><p class="eyebrow">NO RECORDED FAILURE PATTERNS</p><h2>Your Mistake Lab is clean.</h2><p>Complete training sessions. Incorrect attempts will be grouped here by failure pattern.</p><button class="button" id="go-train">Start training</button></div>';document.querySelector('#go-train').onclick=()=>location.hash='statement-lab';return}
+ view.innerHTML=`<section class="section"><div class="card hero"><div><p class="eyebrow">YOUR ERROR PROFILE</p><h2>${failed.length} recorded failed attempt${failed.length===1?'':'s'}</h2><p>Do not treat all wrong answers equally. Attack the repeated operation that caused them.</p></div><div class="card insight"><strong>Highest priority</strong><h3>${LABEL[ranked[0][0]]||ranked[0][0].replaceAll('_',' ')}</h3><p>${ranked[0][1].length} occurrence(s). Retrain the underlying skill before adding harder puzzles.</p></div></div></section>
+ <section class="section"><div class="grid grid-2">${ranked.map(([type,items])=>{const latest=items.sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt))[0];return `<div class="card mistake-card"><div class="list-item"><h3>${LABEL[type]||type.replaceAll('_',' ')}</h3><span class="chip">${items.length}×</span></div><p>Latest: ${new Date(latest.createdAt).toLocaleString()}</p><p class="muted">Associated skills: ${[...new Set(items.flatMap(i=>i.skills||[]))].map(s=>s.replaceAll('_',' ')).join(', ')||'Unclassified'}</p></div>`}).join('')}</div></section>`;
+}

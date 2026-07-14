@@ -1,0 +1,293 @@
+[
+  {
+    "id": "gp01",
+    "title": "Anchor, Chain, Negative",
+    "difficulty": 3,
+    "slots": 8,
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "skills": [
+      "guided_puzzle_solving",
+      "clue_prioritization",
+      "constraint_integration",
+      "negative_constraint_handling"
+    ],
+    "clues": [
+      "C sits at position 4.",
+      "B sits immediately to the left of C.",
+      "A sits second to the left of B.",
+      "D sits immediately to the right of C.",
+      "E is not adjacent to D."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "C",
+        "position": 3,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "C",
+        "offset": -1,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "offset": -2,
+        "clueIndex": 2
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "offset": 1,
+        "clueIndex": 3
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "E",
+        "b": "D",
+        "clueIndex": 4
+      }
+    ],
+    "priority": {
+      "best": [
+        0
+      ],
+      "explanation": "C is an absolute anchor. Once C is fixed, B and D become certain, then A follows from B."
+    },
+    "explanation": "Build the deterministic C-B-D-A structure first. E is flexible but cannot be adjacent to D."
+  },
+  {
+    "id": "gp02",
+    "title": "Two-Case Construction",
+    "difficulty": 4,
+    "slots": 9,
+    "entities": [
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T"
+    ],
+    "skills": [
+      "case_management",
+      "guided_puzzle_solving",
+      "constraint_integration"
+    ],
+    "clues": [
+      "Q sits at position 5.",
+      "P sits second to the left of Q.",
+      "R sits either immediately to the left or immediately to the right of P.",
+      "S sits immediately to the right of Q.",
+      "T is not adjacent to S."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "Q",
+        "position": 4,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "P",
+        "reference": "Q",
+        "offset": -2,
+        "clueIndex": 1
+      },
+      {
+        "kind": "either_relative",
+        "subject": "R",
+        "reference": "P",
+        "offsets": [
+          -1,
+          1
+        ],
+        "clueIndex": 2
+      },
+      {
+        "kind": "relative",
+        "subject": "S",
+        "reference": "Q",
+        "offset": 1,
+        "clueIndex": 3
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "T",
+        "b": "S",
+        "clueIndex": 4
+      }
+    ],
+    "priority": {
+      "best": [
+        0,
+        1
+      ],
+      "explanation": "Q and P create the deterministic base. Only R creates a genuine branch, so cases should be created after the base is built."
+    },
+    "explanation": "Create the base Q-P-S first. Duplicate it only when resolving R's either-or clue. T remains constrained by non-adjacency."
+  },
+  {
+    "id": "gp03",
+    "title": "Prune the Impossible Case",
+    "difficulty": 4,
+    "slots": 8,
+    "entities": [
+      "H",
+      "J",
+      "K",
+      "L",
+      "M"
+    ],
+    "skills": [
+      "case_management",
+      "contradiction_detection",
+      "guided_puzzle_solving"
+    ],
+    "clues": [
+      "J sits at position 2.",
+      "K sits either second to the left or second to the right of J.",
+      "L sits immediately to the right of K.",
+      "M sits immediately to the right of L.",
+      "H is not adjacent to M."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "J",
+        "position": 1,
+        "clueIndex": 0
+      },
+      {
+        "kind": "either_relative",
+        "subject": "K",
+        "reference": "J",
+        "offsets": [
+          -2,
+          2
+        ],
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "L",
+        "reference": "K",
+        "offset": 1,
+        "clueIndex": 2
+      },
+      {
+        "kind": "relative",
+        "subject": "M",
+        "reference": "L",
+        "offset": 1,
+        "clueIndex": 3
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "H",
+        "b": "M",
+        "clueIndex": 4
+      }
+    ],
+    "priority": {
+      "best": [
+        0,
+        1
+      ],
+      "explanation": "J anchors the board. Testing K immediately exposes that the left branch falls outside the board, so no second live case is needed."
+    },
+    "explanation": "The left branch for K is impossible because it leaves the board. Prune it immediately and continue with the surviving case."
+  },
+  {
+    "id": "gp04",
+    "title": "Connected Base Before Branch",
+    "difficulty": 4,
+    "slots": 10,
+    "entities": [
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "skills": [
+      "clue_prioritization",
+      "case_management",
+      "constraint_integration",
+      "guided_puzzle_solving"
+    ],
+    "clues": [
+      "W sits at position 6.",
+      "V sits immediately to the left of W.",
+      "U sits second to the left of V.",
+      "X sits either immediately to the left or immediately to the right of U.",
+      "Y sits immediately to the right of W.",
+      "Z is not adjacent to Y."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "W",
+        "position": 5,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "V",
+        "reference": "W",
+        "offset": -1,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "U",
+        "reference": "V",
+        "offset": -2,
+        "clueIndex": 2
+      },
+      {
+        "kind": "either_relative",
+        "subject": "X",
+        "reference": "U",
+        "offsets": [
+          -1,
+          1
+        ],
+        "clueIndex": 3
+      },
+      {
+        "kind": "relative",
+        "subject": "Y",
+        "reference": "W",
+        "offset": 1,
+        "clueIndex": 4
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "Z",
+        "b": "Y",
+        "clueIndex": 5
+      }
+    ],
+    "priority": {
+      "best": [
+        0,
+        1
+      ],
+      "explanation": "W and V begin the highest-value connected deterministic chain. Build W-V-U-Y before branching for X."
+    },
+    "explanation": "The disciplined solve order is deterministic base first, X branch second, Z negative restriction last."
+  }
+]

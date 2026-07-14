@@ -1,0 +1,10 @@
+import{PositionBoard}from'./position-board.js';
+export class CaseBoard{
+ constructor(root,{entities,slots,onChange=()=>{}}){this.root=root;this.entities=entities;this.slots=slots;this.onChange=onChange;this.cases=[];this.active=0;this.addCase('Case A')}
+ addCase(name,seed=null){const c={id:crypto.randomUUID(),name:name||`Case ${String.fromCharCode(65+this.cases.length)}`,placements:seed?{...seed}:{}};this.cases.push(c);this.active=this.cases.length-1;this.render();return c}
+ duplicateActive(){if(this.cases.length>=4)return;const cur=this.cases[this.active];this.addCase(`Case ${String.fromCharCode(65+this.cases.length)}`,cur.placements)}
+ removeActive(){if(this.cases.length<=1)return;this.cases.splice(this.active,1);this.active=Math.max(0,this.active-1);this.render()}
+ snapshot(){return {...this.cases[this.active].placements}}
+ allSnapshots(){return this.cases.map(c=>({name:c.name,placements:{...c.placements}}))}
+ render(){this.root.innerHTML=`<div class="case-tabs">${this.cases.map((c,i)=>`<button class="case-tab ${i===this.active?'active':''}" data-case="${i}">${c.name}</button>`).join('')}<button class="case-action" id="dup-case">Duplicate case</button>${this.cases.length>1?'<button class="case-action danger" id="del-case">Delete case</button>':''}</div><div class="case-board-host"></div>`;this.root.querySelectorAll('[data-case]').forEach(b=>b.onclick=()=>{this.active=+b.dataset.case;this.render()});this.root.querySelector('#dup-case').onclick=()=>this.duplicateActive();this.root.querySelector('#del-case')?.addEventListener('click',()=>this.removeActive());const c=this.cases[this.active];this.board=new PositionBoard(this.root.querySelector('.case-board-host'),{entities:this.entities,slots:this.slots,onChange:p=>{c.placements={...p};this.onChange(this.allSnapshots(),this.active)}});if(Object.keys(c.placements).length)this.board.setPlacements?.(c.placements)}
+}

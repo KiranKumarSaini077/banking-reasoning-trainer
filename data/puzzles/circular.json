@@ -1,0 +1,6258 @@
+[
+  {
+    "id": "circular_center_001",
+    "mode": "center",
+    "title": "Center Circular Challenge 1",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 98,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_001_clue_01",
+        "text": "G sits second to the right of C."
+      },
+      {
+        "id": "circular_center_001_clue_02",
+        "text": "D sits immediately to the left of E."
+      },
+      {
+        "id": "circular_center_001_clue_03",
+        "text": "A sits second to the right of F."
+      },
+      {
+        "id": "circular_center_001_clue_04",
+        "text": "H sits third to the right of A."
+      },
+      {
+        "id": "circular_center_001_clue_05",
+        "text": "H sits second to the right of G."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "C",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_001_constraint_01",
+        "sourceClueId": "circular_center_001_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "E",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_center_001_constraint_02",
+        "sourceClueId": "circular_center_001_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_001_constraint_03",
+        "sourceClueId": "circular_center_001_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "A",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_001_constraint_04",
+        "sourceClueId": "circular_center_001_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "G",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_001_constraint_05",
+        "sourceClueId": "circular_center_001_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite E?",
+        "type": "opposite_entity",
+        "reference": "E"
+      },
+      {
+        "prompt": "Who sits second to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_002",
+    "mode": "center",
+    "title": "Center Circular Challenge 2",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 94,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_002_clue_01",
+        "text": "G sits immediately to the left of B."
+      },
+      {
+        "id": "circular_center_002_clue_02",
+        "text": "A sits immediately to the right of E."
+      },
+      {
+        "id": "circular_center_002_clue_03",
+        "text": "D sits opposite F."
+      },
+      {
+        "id": "circular_center_002_clue_04",
+        "text": "D sits immediately to the right of A."
+      },
+      {
+        "id": "circular_center_002_clue_05",
+        "text": "H sits opposite A."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "B",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_center_002_constraint_01",
+        "sourceClueId": "circular_center_002_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_002_constraint_02",
+        "sourceClueId": "circular_center_002_clue_02"
+      },
+      {
+        "kind": "opposite",
+        "a": "F",
+        "b": "D",
+        "id": "circular_center_002_constraint_03",
+        "sourceClueId": "circular_center_002_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "A",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_002_constraint_04",
+        "sourceClueId": "circular_center_002_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "A",
+        "b": "H",
+        "id": "circular_center_002_constraint_05",
+        "sourceClueId": "circular_center_002_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite A?",
+        "type": "opposite_entity",
+        "reference": "A"
+      },
+      {
+        "prompt": "Who sits immediately to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_003",
+    "mode": "center",
+    "title": "Center Circular Challenge 3",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 98,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_003_clue_01",
+        "text": "A sits third to the right of D."
+      },
+      {
+        "id": "circular_center_003_clue_02",
+        "text": "F sits immediately to the left of A."
+      },
+      {
+        "id": "circular_center_003_clue_03",
+        "text": "B sits second to the right of E."
+      },
+      {
+        "id": "circular_center_003_clue_04",
+        "text": "H sits second to the right of F."
+      },
+      {
+        "id": "circular_center_003_clue_05",
+        "text": "H sits third to the right of G."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_003_constraint_01",
+        "sourceClueId": "circular_center_003_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "A",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_center_003_constraint_02",
+        "sourceClueId": "circular_center_003_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_003_constraint_03",
+        "sourceClueId": "circular_center_003_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_003_constraint_04",
+        "sourceClueId": "circular_center_003_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "G",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_003_constraint_05",
+        "sourceClueId": "circular_center_003_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite F?",
+        "type": "opposite_entity",
+        "reference": "F"
+      },
+      {
+        "prompt": "Who sits immediately to the left of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_004",
+    "mode": "center",
+    "title": "Center Circular Challenge 4",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 98,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_004_clue_01",
+        "text": "G sits immediately to the right of C."
+      },
+      {
+        "id": "circular_center_004_clue_02",
+        "text": "B sits second to the right of F."
+      },
+      {
+        "id": "circular_center_004_clue_03",
+        "text": "B sits second to the left of D."
+      },
+      {
+        "id": "circular_center_004_clue_04",
+        "text": "D sits third to the left of A."
+      },
+      {
+        "id": "circular_center_004_clue_05",
+        "text": "A sits opposite H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "C",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_004_constraint_01",
+        "sourceClueId": "circular_center_004_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_004_constraint_02",
+        "sourceClueId": "circular_center_004_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_center_004_constraint_03",
+        "sourceClueId": "circular_center_004_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "A",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_center_004_constraint_04",
+        "sourceClueId": "circular_center_004_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "A",
+        "id": "circular_center_004_constraint_05",
+        "sourceClueId": "circular_center_004_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite D?",
+        "type": "opposite_entity",
+        "reference": "D"
+      },
+      {
+        "prompt": "Who sits immediately to the left of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_005",
+    "mode": "center",
+    "title": "Center Circular Challenge 5",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 96,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_005_clue_01",
+        "text": "C sits third to the right of D."
+      },
+      {
+        "id": "circular_center_005_clue_02",
+        "text": "H sits third to the right of C."
+      },
+      {
+        "id": "circular_center_005_clue_03",
+        "text": "B sits third to the right of E."
+      },
+      {
+        "id": "circular_center_005_clue_04",
+        "text": "F sits third to the right of G."
+      },
+      {
+        "id": "circular_center_005_clue_05",
+        "text": "F sits opposite H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_005_constraint_01",
+        "sourceClueId": "circular_center_005_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "C",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_005_constraint_02",
+        "sourceClueId": "circular_center_005_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "E",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_005_constraint_03",
+        "sourceClueId": "circular_center_005_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_005_constraint_04",
+        "sourceClueId": "circular_center_005_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "F",
+        "id": "circular_center_005_constraint_05",
+        "sourceClueId": "circular_center_005_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits second to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_006",
+    "mode": "center",
+    "title": "Center Circular Challenge 6",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 96,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_006_clue_01",
+        "text": "E sits second to the left of C."
+      },
+      {
+        "id": "circular_center_006_clue_02",
+        "text": "A sits second to the left of D."
+      },
+      {
+        "id": "circular_center_006_clue_03",
+        "text": "F sits third to the right of E."
+      },
+      {
+        "id": "circular_center_006_clue_04",
+        "text": "A sits third to the left of G."
+      },
+      {
+        "id": "circular_center_006_clue_05",
+        "text": "H sits immediately to the right of E."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "C",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_center_006_constraint_01",
+        "sourceClueId": "circular_center_006_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_center_006_constraint_02",
+        "sourceClueId": "circular_center_006_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "E",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_006_constraint_03",
+        "sourceClueId": "circular_center_006_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "G",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_center_006_constraint_04",
+        "sourceClueId": "circular_center_006_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_006_constraint_05",
+        "sourceClueId": "circular_center_006_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite A?",
+        "type": "opposite_entity",
+        "reference": "A"
+      },
+      {
+        "prompt": "Who sits second to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_007",
+    "mode": "center",
+    "title": "Center Circular Challenge 7",
+    "subtitle": "PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "PO Prelims",
+    "qualityScore": 98,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_007_clue_01",
+        "text": "A sits opposite C."
+      },
+      {
+        "id": "circular_center_007_clue_02",
+        "text": "F sits second to the right of D."
+      },
+      {
+        "id": "circular_center_007_clue_03",
+        "text": "A sits third to the right of D."
+      },
+      {
+        "id": "circular_center_007_clue_04",
+        "text": "E sits immediately to the right of G."
+      },
+      {
+        "id": "circular_center_007_clue_05",
+        "text": "E sits opposite H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "opposite",
+        "a": "C",
+        "b": "A",
+        "id": "circular_center_007_constraint_01",
+        "sourceClueId": "circular_center_007_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "D",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_007_constraint_02",
+        "sourceClueId": "circular_center_007_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_007_constraint_03",
+        "sourceClueId": "circular_center_007_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "G",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_007_constraint_04",
+        "sourceClueId": "circular_center_007_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "E",
+        "id": "circular_center_007_constraint_05",
+        "sourceClueId": "circular_center_007_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits immediately to the right of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_008",
+    "mode": "center",
+    "title": "Center Circular Challenge 8",
+    "subtitle": "PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "PO Prelims",
+    "qualityScore": 98,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_008_clue_01",
+        "text": "F sits opposite B."
+      },
+      {
+        "id": "circular_center_008_clue_02",
+        "text": "G sits third to the right of A."
+      },
+      {
+        "id": "circular_center_008_clue_03",
+        "text": "E sits immediately to the right of F."
+      },
+      {
+        "id": "circular_center_008_clue_04",
+        "text": "E sits second to the left of D."
+      },
+      {
+        "id": "circular_center_008_clue_05",
+        "text": "D sits second to the left of H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "opposite",
+        "a": "B",
+        "b": "F",
+        "id": "circular_center_008_constraint_01",
+        "sourceClueId": "circular_center_008_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "A",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_008_constraint_02",
+        "sourceClueId": "circular_center_008_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_008_constraint_03",
+        "sourceClueId": "circular_center_008_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_center_008_constraint_04",
+        "sourceClueId": "circular_center_008_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_center_008_constraint_05",
+        "sourceClueId": "circular_center_008_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite H?",
+        "type": "opposite_entity",
+        "reference": "H"
+      },
+      {
+        "prompt": "Who sits immediately to the left of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_009",
+    "mode": "center",
+    "title": "Center Circular Challenge 9",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 96,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_009_clue_01",
+        "text": "E sits immediately to the right of F."
+      },
+      {
+        "id": "circular_center_009_clue_02",
+        "text": "A sits second to the right of B."
+      },
+      {
+        "id": "circular_center_009_clue_03",
+        "text": "D sits immediately to the right of A."
+      },
+      {
+        "id": "circular_center_009_clue_04",
+        "text": "G sits immediately to the right of D."
+      },
+      {
+        "id": "circular_center_009_clue_05",
+        "text": "H sits opposite D."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_009_constraint_01",
+        "sourceClueId": "circular_center_009_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_009_constraint_02",
+        "sourceClueId": "circular_center_009_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "A",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_009_constraint_03",
+        "sourceClueId": "circular_center_009_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "D",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_009_constraint_04",
+        "sourceClueId": "circular_center_009_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "D",
+        "b": "H",
+        "id": "circular_center_009_constraint_05",
+        "sourceClueId": "circular_center_009_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of C?",
+        "type": "relative_entity",
+        "reference": "C",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite G?",
+        "type": "opposite_entity",
+        "reference": "G"
+      },
+      {
+        "prompt": "Who sits second to the left of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 2,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_center_010",
+    "mode": "center",
+    "title": "Center Circular Challenge 10",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 98,
+    "facing": "center",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_center_010_clue_01",
+        "text": "E sits second to the right of C."
+      },
+      {
+        "id": "circular_center_010_clue_02",
+        "text": "C sits immediately to the right of F."
+      },
+      {
+        "id": "circular_center_010_clue_03",
+        "text": "C sits third to the right of G."
+      },
+      {
+        "id": "circular_center_010_clue_04",
+        "text": "D sits second to the left of A."
+      },
+      {
+        "id": "circular_center_010_clue_05",
+        "text": "D sits third to the left of H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "C",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_center_010_constraint_01",
+        "sourceClueId": "circular_center_010_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_center_010_constraint_02",
+        "sourceClueId": "circular_center_010_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "G",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_center_010_constraint_03",
+        "sourceClueId": "circular_center_010_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "A",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_center_010_constraint_04",
+        "sourceClueId": "circular_center_010_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "H",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_center_010_constraint_05",
+        "sourceClueId": "circular_center_010_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite E?",
+        "type": "opposite_entity",
+        "reference": "E"
+      },
+      {
+        "prompt": "Who sits immediately to the left of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_001",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 1",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 98,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_001_clue_01",
+        "text": "B sits opposite F."
+      },
+      {
+        "id": "circular_outside_001_clue_02",
+        "text": "D sits third to the right of C."
+      },
+      {
+        "id": "circular_outside_001_clue_03",
+        "text": "H sits second to the right of E."
+      },
+      {
+        "id": "circular_outside_001_clue_04",
+        "text": "G sits second to the left of F."
+      },
+      {
+        "id": "circular_outside_001_clue_05",
+        "text": "F sits immediately to the left of H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "opposite",
+        "a": "F",
+        "b": "B",
+        "id": "circular_outside_001_constraint_01",
+        "sourceClueId": "circular_outside_001_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_001_constraint_02",
+        "sourceClueId": "circular_outside_001_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_001_constraint_03",
+        "sourceClueId": "circular_outside_001_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "F",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_001_constraint_04",
+        "sourceClueId": "circular_outside_001_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "H",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_outside_001_constraint_05",
+        "sourceClueId": "circular_outside_001_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite B?",
+        "type": "opposite_entity",
+        "reference": "B"
+      },
+      {
+        "prompt": "Who sits immediately to the left of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_002",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 2",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 94,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_002_clue_01",
+        "text": "D sits second to the left of B."
+      },
+      {
+        "id": "circular_outside_002_clue_02",
+        "text": "F sits third to the right of E."
+      },
+      {
+        "id": "circular_outside_002_clue_03",
+        "text": "G sits second to the left of E."
+      },
+      {
+        "id": "circular_outside_002_clue_04",
+        "text": "A sits third to the left of B."
+      },
+      {
+        "id": "circular_outside_002_clue_05",
+        "text": "H sits opposite A."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "B",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_002_constraint_01",
+        "sourceClueId": "circular_outside_002_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "E",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_002_constraint_02",
+        "sourceClueId": "circular_outside_002_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "E",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_002_constraint_03",
+        "sourceClueId": "circular_outside_002_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_outside_002_constraint_04",
+        "sourceClueId": "circular_outside_002_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "A",
+        "b": "H",
+        "id": "circular_outside_002_constraint_05",
+        "sourceClueId": "circular_outside_002_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite F?",
+        "type": "opposite_entity",
+        "reference": "F"
+      },
+      {
+        "prompt": "Who sits second to the right of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 2,
+        "direction": "right"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_003",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 3",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 96,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_003_clue_01",
+        "text": "D sits second to the left of C."
+      },
+      {
+        "id": "circular_outside_003_clue_02",
+        "text": "E sits third to the right of G."
+      },
+      {
+        "id": "circular_outside_003_clue_03",
+        "text": "E sits second to the left of B."
+      },
+      {
+        "id": "circular_outside_003_clue_04",
+        "text": "B sits immediately to the right of F."
+      },
+      {
+        "id": "circular_outside_003_clue_05",
+        "text": "H sits second to the left of F."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_003_constraint_01",
+        "sourceClueId": "circular_outside_003_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "G",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_003_constraint_02",
+        "sourceClueId": "circular_outside_003_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "B",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_003_constraint_03",
+        "sourceClueId": "circular_outside_003_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_outside_003_constraint_04",
+        "sourceClueId": "circular_outside_003_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_003_constraint_05",
+        "sourceClueId": "circular_outside_003_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits immediately to the right of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 1,
+        "direction": "right"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_004",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 4",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 96,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_004_clue_01",
+        "text": "D sits second to the left of C."
+      },
+      {
+        "id": "circular_outside_004_clue_02",
+        "text": "C sits second to the left of E."
+      },
+      {
+        "id": "circular_outside_004_clue_03",
+        "text": "G sits immediately to the left of A."
+      },
+      {
+        "id": "circular_outside_004_clue_04",
+        "text": "F sits second to the right of G."
+      },
+      {
+        "id": "circular_outside_004_clue_05",
+        "text": "F sits second to the left of H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_004_constraint_01",
+        "sourceClueId": "circular_outside_004_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "E",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_004_constraint_02",
+        "sourceClueId": "circular_outside_004_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "A",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_outside_004_constraint_03",
+        "sourceClueId": "circular_outside_004_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_004_constraint_04",
+        "sourceClueId": "circular_outside_004_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_004_constraint_05",
+        "sourceClueId": "circular_outside_004_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the left of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 1,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite G?",
+        "type": "opposite_entity",
+        "reference": "G"
+      },
+      {
+        "prompt": "Who sits immediately to the left of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_005",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 5",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 98,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_005_clue_01",
+        "text": "D sits third to the right of C."
+      },
+      {
+        "id": "circular_outside_005_clue_02",
+        "text": "H sits third to the right of D."
+      },
+      {
+        "id": "circular_outside_005_clue_03",
+        "text": "F sits second to the left of E."
+      },
+      {
+        "id": "circular_outside_005_clue_04",
+        "text": "F sits third to the right of G."
+      },
+      {
+        "id": "circular_outside_005_clue_05",
+        "text": "B sits opposite H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_005_constraint_01",
+        "sourceClueId": "circular_outside_005_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_005_constraint_02",
+        "sourceClueId": "circular_outside_005_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "E",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_005_constraint_03",
+        "sourceClueId": "circular_outside_005_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_005_constraint_04",
+        "sourceClueId": "circular_outside_005_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "B",
+        "id": "circular_outside_005_constraint_05",
+        "sourceClueId": "circular_outside_005_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 1,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite B?",
+        "type": "opposite_entity",
+        "reference": "B"
+      },
+      {
+        "prompt": "Who sits second to the right of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 2,
+        "direction": "right"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_006",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 6",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 98,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_006_clue_01",
+        "text": "D sits second to the right of B."
+      },
+      {
+        "id": "circular_outside_006_clue_02",
+        "text": "C sits immediately to the left of H."
+      },
+      {
+        "id": "circular_outside_006_clue_03",
+        "text": "E sits opposite F."
+      },
+      {
+        "id": "circular_outside_006_clue_04",
+        "text": "E sits immediately to the left of D."
+      },
+      {
+        "id": "circular_outside_006_clue_05",
+        "text": "G sits third to the left of D."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "B",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_006_constraint_01",
+        "sourceClueId": "circular_outside_006_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "H",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_outside_006_constraint_02",
+        "sourceClueId": "circular_outside_006_clue_02"
+      },
+      {
+        "kind": "opposite",
+        "a": "F",
+        "b": "E",
+        "id": "circular_outside_006_constraint_03",
+        "sourceClueId": "circular_outside_006_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "D",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_outside_006_constraint_04",
+        "sourceClueId": "circular_outside_006_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "D",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_outside_006_constraint_05",
+        "sourceClueId": "circular_outside_006_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite A?",
+        "type": "opposite_entity",
+        "reference": "A"
+      },
+      {
+        "prompt": "Who sits immediately to the left of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_007",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 7",
+    "subtitle": "PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "PO Prelims",
+    "qualityScore": 94,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_007_clue_01",
+        "text": "C sits second to the right of E."
+      },
+      {
+        "id": "circular_outside_007_clue_02",
+        "text": "B sits third to the left of A."
+      },
+      {
+        "id": "circular_outside_007_clue_03",
+        "text": "H sits immediately to the left of A."
+      },
+      {
+        "id": "circular_outside_007_clue_04",
+        "text": "F sits immediately to the left of G."
+      },
+      {
+        "id": "circular_outside_007_clue_05",
+        "text": "H sits third to the left of G."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_007_constraint_01",
+        "sourceClueId": "circular_outside_007_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "A",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_outside_007_constraint_02",
+        "sourceClueId": "circular_outside_007_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "A",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_outside_007_constraint_03",
+        "sourceClueId": "circular_outside_007_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_outside_007_constraint_04",
+        "sourceClueId": "circular_outside_007_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "G",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_outside_007_constraint_05",
+        "sourceClueId": "circular_outside_007_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits immediately to the left of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 1,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_008",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 8",
+    "subtitle": "PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "PO Prelims",
+    "qualityScore": 98,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_008_clue_01",
+        "text": "F sits immediately to the left of B."
+      },
+      {
+        "id": "circular_outside_008_clue_02",
+        "text": "C sits immediately to the right of E."
+      },
+      {
+        "id": "circular_outside_008_clue_03",
+        "text": "H sits second to the right of F."
+      },
+      {
+        "id": "circular_outside_008_clue_04",
+        "text": "G sits second to the left of D."
+      },
+      {
+        "id": "circular_outside_008_clue_05",
+        "text": "D sits third to the right of H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "B",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_outside_008_constraint_01",
+        "sourceClueId": "circular_outside_008_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_outside_008_constraint_02",
+        "sourceClueId": "circular_outside_008_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_008_constraint_03",
+        "sourceClueId": "circular_outside_008_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_008_constraint_04",
+        "sourceClueId": "circular_outside_008_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "H",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_008_constraint_05",
+        "sourceClueId": "circular_outside_008_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of C?",
+        "type": "relative_entity",
+        "reference": "C",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite G?",
+        "type": "opposite_entity",
+        "reference": "G"
+      },
+      {
+        "prompt": "Who sits second to the right of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_009",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 9",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 96,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_009_clue_01",
+        "text": "F sits second to the left of C."
+      },
+      {
+        "id": "circular_outside_009_clue_02",
+        "text": "E sits second to the right of G."
+      },
+      {
+        "id": "circular_outside_009_clue_03",
+        "text": "E sits opposite B."
+      },
+      {
+        "id": "circular_outside_009_clue_04",
+        "text": "C sits third to the left of B."
+      },
+      {
+        "id": "circular_outside_009_clue_05",
+        "text": "D sits second to the left of H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "C",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_009_constraint_01",
+        "sourceClueId": "circular_outside_009_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "G",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_009_constraint_02",
+        "sourceClueId": "circular_outside_009_clue_02"
+      },
+      {
+        "kind": "opposite",
+        "a": "B",
+        "b": "E",
+        "id": "circular_outside_009_constraint_03",
+        "sourceClueId": "circular_outside_009_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "B",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_outside_009_constraint_04",
+        "sourceClueId": "circular_outside_009_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_outside_009_constraint_05",
+        "sourceClueId": "circular_outside_009_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite F?",
+        "type": "opposite_entity",
+        "reference": "F"
+      },
+      {
+        "prompt": "Who sits second to the left of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 2,
+        "direction": "left"
+      }
+    ]
+  },
+  {
+    "id": "circular_outside_010",
+    "mode": "outside",
+    "title": "Outside Circular Challenge 10",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 98,
+    "facing": "outside",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_outside_010_clue_01",
+        "text": "D sits second to the right of B."
+      },
+      {
+        "id": "circular_outside_010_clue_02",
+        "text": "C sits immediately to the right of D."
+      },
+      {
+        "id": "circular_outside_010_clue_03",
+        "text": "G sits third to the right of E."
+      },
+      {
+        "id": "circular_outside_010_clue_04",
+        "text": "F sits second to the right of H."
+      },
+      {
+        "id": "circular_outside_010_clue_05",
+        "text": "G sits opposite H."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "B",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_010_constraint_01",
+        "sourceClueId": "circular_outside_010_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "D",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_outside_010_constraint_02",
+        "sourceClueId": "circular_outside_010_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "E",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_outside_010_constraint_03",
+        "sourceClueId": "circular_outside_010_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "H",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_outside_010_constraint_04",
+        "sourceClueId": "circular_outside_010_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "G",
+        "id": "circular_outside_010_constraint_05",
+        "sourceClueId": "circular_outside_010_clue_05"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite B?",
+        "type": "opposite_entity",
+        "reference": "B"
+      },
+      {
+        "prompt": "Who sits immediately to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right"
+      }
+    ]
+  },
+  {
+    "id": "circular_mixed_001",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 1",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_001_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_001_clue_01",
+        "text": "B sits immediately to the left of D."
+      },
+      {
+        "id": "circular_mixed_001_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_001_clue_03",
+        "text": "E sits third to the right of A."
+      },
+      {
+        "id": "circular_mixed_001_clue_02",
+        "text": "A sits second to the left of B."
+      },
+      {
+        "id": "circular_mixed_001_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_001_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_001_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_001_clue_05",
+        "text": "G sits immediately to the left of H."
+      },
+      {
+        "id": "circular_mixed_001_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_001_clue_04",
+        "text": "H sits third to the left of F."
+      },
+      {
+        "id": "circular_mixed_001_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_001_clue_06",
+        "text": "A faces the center."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "D",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_001_constraint_01",
+        "sourceClueId": "circular_mixed_001_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_001_constraint_02",
+        "sourceClueId": "circular_mixed_001_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "A",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_001_constraint_03",
+        "sourceClueId": "circular_mixed_001_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_001_constraint_04",
+        "sourceClueId": "circular_mixed_001_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "H",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_001_constraint_05",
+        "sourceClueId": "circular_mixed_001_clue_05"
+      },
+      {
+        "id": "circular_mixed_001_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_001_clue_06"
+      },
+      {
+        "id": "circular_mixed_001_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_001_clue_07"
+      },
+      {
+        "id": "circular_mixed_001_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_001_clue_08"
+      },
+      {
+        "id": "circular_mixed_001_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_001_clue_09"
+      },
+      {
+        "id": "circular_mixed_001_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_001_clue_10"
+      },
+      {
+        "id": "circular_mixed_001_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_001_clue_11"
+      },
+      {
+        "id": "circular_mixed_001_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_001_clue_12"
+      },
+      {
+        "id": "circular_mixed_001_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_001_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite E?",
+        "type": "opposite_entity",
+        "reference": "E"
+      },
+      {
+        "prompt": "Who sits second to the left of C?",
+        "type": "relative_entity",
+        "reference": "C",
+        "steps": 2,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "center",
+      "D": "outside",
+      "E": "center",
+      "F": "center",
+      "G": "outside",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_002",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 2",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_002_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_002_clue_03",
+        "text": "G sits opposite B."
+      },
+      {
+        "id": "circular_mixed_002_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_002_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_002_clue_05",
+        "text": "H sits third to the right of D."
+      },
+      {
+        "id": "circular_mixed_002_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_002_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_002_clue_01",
+        "text": "C sits third to the right of G."
+      },
+      {
+        "id": "circular_mixed_002_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_002_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_002_clue_04",
+        "text": "H sits second to the right of F."
+      },
+      {
+        "id": "circular_mixed_002_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_002_clue_02",
+        "text": "B sits immediately to the left of E."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "G",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_002_constraint_01",
+        "sourceClueId": "circular_mixed_002_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "E",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_002_constraint_02",
+        "sourceClueId": "circular_mixed_002_clue_02"
+      },
+      {
+        "kind": "opposite",
+        "a": "B",
+        "b": "G",
+        "id": "circular_mixed_002_constraint_03",
+        "sourceClueId": "circular_mixed_002_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_002_constraint_04",
+        "sourceClueId": "circular_mixed_002_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_002_constraint_05",
+        "sourceClueId": "circular_mixed_002_clue_05"
+      },
+      {
+        "id": "circular_mixed_002_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_002_clue_06"
+      },
+      {
+        "id": "circular_mixed_002_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_002_clue_07"
+      },
+      {
+        "id": "circular_mixed_002_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_002_clue_08"
+      },
+      {
+        "id": "circular_mixed_002_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_002_clue_09"
+      },
+      {
+        "id": "circular_mixed_002_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_002_clue_10"
+      },
+      {
+        "id": "circular_mixed_002_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_002_clue_11"
+      },
+      {
+        "id": "circular_mixed_002_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_002_clue_12"
+      },
+      {
+        "id": "circular_mixed_002_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_002_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of C?",
+        "type": "relative_entity",
+        "reference": "C",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite A?",
+        "type": "opposite_entity",
+        "reference": "A"
+      },
+      {
+        "prompt": "Who sits second to the left of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 2,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "center",
+      "D": "center",
+      "E": "outside",
+      "F": "center",
+      "G": "outside",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_003",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 3",
+    "subtitle": "Foundation \u00b7 validated minimal clue set",
+    "difficulty": "Foundation",
+    "qualityScore": 96,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_003_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_003_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_003_clue_03",
+        "text": "F sits third to the left of A."
+      },
+      {
+        "id": "circular_mixed_003_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_003_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_003_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_003_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_003_clue_05",
+        "text": "H sits opposite A."
+      },
+      {
+        "id": "circular_mixed_003_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_003_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_003_clue_04",
+        "text": "A sits third to the left of G."
+      },
+      {
+        "id": "circular_mixed_003_clue_02",
+        "text": "A sits immediately to the left of C."
+      },
+      {
+        "id": "circular_mixed_003_clue_01",
+        "text": "B sits third to the right of E."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "E",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_003_constraint_01",
+        "sourceClueId": "circular_mixed_003_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "C",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_003_constraint_02",
+        "sourceClueId": "circular_mixed_003_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "A",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_003_constraint_03",
+        "sourceClueId": "circular_mixed_003_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "G",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_003_constraint_04",
+        "sourceClueId": "circular_mixed_003_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "A",
+        "b": "H",
+        "id": "circular_mixed_003_constraint_05",
+        "sourceClueId": "circular_mixed_003_clue_05"
+      },
+      {
+        "id": "circular_mixed_003_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_003_clue_06"
+      },
+      {
+        "id": "circular_mixed_003_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_003_clue_07"
+      },
+      {
+        "id": "circular_mixed_003_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_003_clue_08"
+      },
+      {
+        "id": "circular_mixed_003_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_003_clue_09"
+      },
+      {
+        "id": "circular_mixed_003_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_003_clue_10"
+      },
+      {
+        "id": "circular_mixed_003_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_003_clue_11"
+      },
+      {
+        "id": "circular_mixed_003_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_003_clue_12"
+      },
+      {
+        "id": "circular_mixed_003_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_003_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits immediately to the left of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 1,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "outside",
+      "D": "center",
+      "E": "outside",
+      "F": "center",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_004",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 4",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_004_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_004_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_004_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_004_clue_04",
+        "text": "E sits immediately to the left of A."
+      },
+      {
+        "id": "circular_mixed_004_clue_05",
+        "text": "E sits opposite H."
+      },
+      {
+        "id": "circular_mixed_004_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_004_clue_06",
+        "text": "A faces the outside."
+      },
+      {
+        "id": "circular_mixed_004_clue_02",
+        "text": "D sits second to the right of A."
+      },
+      {
+        "id": "circular_mixed_004_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_004_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_004_clue_01",
+        "text": "F sits third to the right of B."
+      },
+      {
+        "id": "circular_mixed_004_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_004_clue_03",
+        "text": "G sits immediately to the left of F."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "B",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_004_constraint_01",
+        "sourceClueId": "circular_mixed_004_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "A",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_004_constraint_02",
+        "sourceClueId": "circular_mixed_004_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "F",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_004_constraint_03",
+        "sourceClueId": "circular_mixed_004_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "A",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_004_constraint_04",
+        "sourceClueId": "circular_mixed_004_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "E",
+        "id": "circular_mixed_004_constraint_05",
+        "sourceClueId": "circular_mixed_004_clue_05"
+      },
+      {
+        "id": "circular_mixed_004_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_004_clue_06"
+      },
+      {
+        "id": "circular_mixed_004_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_004_clue_07"
+      },
+      {
+        "id": "circular_mixed_004_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_004_clue_08"
+      },
+      {
+        "id": "circular_mixed_004_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_004_clue_09"
+      },
+      {
+        "id": "circular_mixed_004_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_004_clue_10"
+      },
+      {
+        "id": "circular_mixed_004_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_004_clue_11"
+      },
+      {
+        "id": "circular_mixed_004_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_004_clue_12"
+      },
+      {
+        "id": "circular_mixed_004_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_004_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits second to the right of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 2,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "outside",
+      "C": "center",
+      "D": "center",
+      "E": "outside",
+      "F": "center",
+      "G": "outside",
+      "H": "center"
+    }
+  },
+  {
+    "id": "circular_mixed_005",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 5",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 96,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_005_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_005_clue_04",
+        "text": "H sits immediately to the right of F."
+      },
+      {
+        "id": "circular_mixed_005_clue_02",
+        "text": "A sits immediately to the right of G."
+      },
+      {
+        "id": "circular_mixed_005_clue_03",
+        "text": "H sits immediately to the right of E."
+      },
+      {
+        "id": "circular_mixed_005_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_005_clue_01",
+        "text": "D sits immediately to the left of C."
+      },
+      {
+        "id": "circular_mixed_005_clue_05",
+        "text": "G sits opposite H."
+      },
+      {
+        "id": "circular_mixed_005_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_005_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_005_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_005_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_005_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_005_clue_06",
+        "text": "A faces the outside."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_005_constraint_01",
+        "sourceClueId": "circular_mixed_005_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "G",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_005_constraint_02",
+        "sourceClueId": "circular_mixed_005_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_005_constraint_03",
+        "sourceClueId": "circular_mixed_005_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_005_constraint_04",
+        "sourceClueId": "circular_mixed_005_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "G",
+        "id": "circular_mixed_005_constraint_05",
+        "sourceClueId": "circular_mixed_005_clue_05"
+      },
+      {
+        "id": "circular_mixed_005_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_005_clue_06"
+      },
+      {
+        "id": "circular_mixed_005_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_005_clue_07"
+      },
+      {
+        "id": "circular_mixed_005_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_005_clue_08"
+      },
+      {
+        "id": "circular_mixed_005_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_005_clue_09"
+      },
+      {
+        "id": "circular_mixed_005_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_005_clue_10"
+      },
+      {
+        "id": "circular_mixed_005_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_005_clue_11"
+      },
+      {
+        "id": "circular_mixed_005_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_005_clue_12"
+      },
+      {
+        "id": "circular_mixed_005_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_005_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the left of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 1,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite E?",
+        "type": "opposite_entity",
+        "reference": "E"
+      },
+      {
+        "prompt": "Who sits immediately to the left of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 1,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "outside",
+      "C": "center",
+      "D": "center",
+      "E": "outside",
+      "F": "center",
+      "G": "outside",
+      "H": "center"
+    }
+  },
+  {
+    "id": "circular_mixed_006",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 6",
+    "subtitle": "Standard \u00b7 validated minimal clue set",
+    "difficulty": "Standard",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_006_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_006_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_006_clue_07",
+        "text": "B faces the center."
+      },
+      {
+        "id": "circular_mixed_006_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_006_clue_03",
+        "text": "F sits immediately to the right of G."
+      },
+      {
+        "id": "circular_mixed_006_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_006_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_006_clue_05",
+        "text": "H sits opposite C."
+      },
+      {
+        "id": "circular_mixed_006_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_006_clue_01",
+        "text": "B sits immediately to the right of E."
+      },
+      {
+        "id": "circular_mixed_006_clue_04",
+        "text": "C sits second to the left of F."
+      },
+      {
+        "id": "circular_mixed_006_clue_02",
+        "text": "D sits third to the right of F."
+      },
+      {
+        "id": "circular_mixed_006_clue_08",
+        "text": "C faces the outside."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_006_constraint_01",
+        "sourceClueId": "circular_mixed_006_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "F",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_006_constraint_02",
+        "sourceClueId": "circular_mixed_006_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_006_constraint_03",
+        "sourceClueId": "circular_mixed_006_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "F",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_006_constraint_04",
+        "sourceClueId": "circular_mixed_006_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "C",
+        "b": "H",
+        "id": "circular_mixed_006_constraint_05",
+        "sourceClueId": "circular_mixed_006_clue_05"
+      },
+      {
+        "id": "circular_mixed_006_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_006_clue_06"
+      },
+      {
+        "id": "circular_mixed_006_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_006_clue_07"
+      },
+      {
+        "id": "circular_mixed_006_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_006_clue_08"
+      },
+      {
+        "id": "circular_mixed_006_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_006_clue_09"
+      },
+      {
+        "id": "circular_mixed_006_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_006_clue_10"
+      },
+      {
+        "id": "circular_mixed_006_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_006_clue_11"
+      },
+      {
+        "id": "circular_mixed_006_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_006_clue_12"
+      },
+      {
+        "id": "circular_mixed_006_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_006_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of C?",
+        "type": "relative_entity",
+        "reference": "C",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite A?",
+        "type": "opposite_entity",
+        "reference": "A"
+      },
+      {
+        "prompt": "Who sits second to the left of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 2,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "center",
+      "C": "outside",
+      "D": "outside",
+      "E": "outside",
+      "F": "center",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_007",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 7",
+    "subtitle": "PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "PO Prelims",
+    "qualityScore": 94,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_007_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_007_clue_05",
+        "text": "B sits third to the left of H."
+      },
+      {
+        "id": "circular_mixed_007_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_007_clue_02",
+        "text": "E sits third to the left of B."
+      },
+      {
+        "id": "circular_mixed_007_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_007_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_007_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_007_clue_12",
+        "text": "G faces the same direction as C."
+      },
+      {
+        "id": "circular_mixed_007_clue_01",
+        "text": "D sits second to the left of G."
+      },
+      {
+        "id": "circular_mixed_007_clue_04",
+        "text": "B sits second to the left of A."
+      },
+      {
+        "id": "circular_mixed_007_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_007_clue_06",
+        "text": "A faces the outside."
+      },
+      {
+        "id": "circular_mixed_007_clue_03",
+        "text": "F sits third to the left of G."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "G",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_007_constraint_01",
+        "sourceClueId": "circular_mixed_007_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "B",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_007_constraint_02",
+        "sourceClueId": "circular_mixed_007_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_007_constraint_03",
+        "sourceClueId": "circular_mixed_007_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "A",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_007_constraint_04",
+        "sourceClueId": "circular_mixed_007_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "H",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_007_constraint_05",
+        "sourceClueId": "circular_mixed_007_clue_05"
+      },
+      {
+        "id": "circular_mixed_007_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_007_clue_06"
+      },
+      {
+        "id": "circular_mixed_007_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_007_clue_07"
+      },
+      {
+        "id": "circular_mixed_007_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_007_clue_08"
+      },
+      {
+        "id": "circular_mixed_007_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_007_clue_09"
+      },
+      {
+        "id": "circular_mixed_007_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_007_clue_10"
+      },
+      {
+        "id": "circular_mixed_007_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_007_clue_11"
+      },
+      {
+        "id": "circular_mixed_007_facerel_G",
+        "kind": "same_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_007_clue_12"
+      },
+      {
+        "id": "circular_mixed_007_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_007_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite D?",
+        "type": "opposite_entity",
+        "reference": "D"
+      },
+      {
+        "prompt": "Who sits second to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "outside",
+      "C": "center",
+      "D": "center",
+      "E": "center",
+      "F": "outside",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_008",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 8",
+    "subtitle": "PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "PO Prelims",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_008_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_008_clue_04",
+        "text": "B sits immediately to the left of G."
+      },
+      {
+        "id": "circular_mixed_008_clue_01",
+        "text": "G sits third to the right of D."
+      },
+      {
+        "id": "circular_mixed_008_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_008_clue_05",
+        "text": "H sits third to the left of A."
+      },
+      {
+        "id": "circular_mixed_008_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_008_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_008_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_008_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_008_clue_02",
+        "text": "E sits third to the right of B."
+      },
+      {
+        "id": "circular_mixed_008_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_008_clue_03",
+        "text": "F sits second to the right of H."
+      },
+      {
+        "id": "circular_mixed_008_clue_06",
+        "text": "A faces the center."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_008_constraint_01",
+        "sourceClueId": "circular_mixed_008_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "B",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_008_constraint_02",
+        "sourceClueId": "circular_mixed_008_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "H",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_008_constraint_03",
+        "sourceClueId": "circular_mixed_008_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "G",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_008_constraint_04",
+        "sourceClueId": "circular_mixed_008_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "A",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_008_constraint_05",
+        "sourceClueId": "circular_mixed_008_clue_05"
+      },
+      {
+        "id": "circular_mixed_008_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_008_clue_06"
+      },
+      {
+        "id": "circular_mixed_008_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_008_clue_07"
+      },
+      {
+        "id": "circular_mixed_008_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_008_clue_08"
+      },
+      {
+        "id": "circular_mixed_008_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_008_clue_09"
+      },
+      {
+        "id": "circular_mixed_008_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_008_clue_10"
+      },
+      {
+        "id": "circular_mixed_008_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_008_clue_11"
+      },
+      {
+        "id": "circular_mixed_008_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_008_clue_12"
+      },
+      {
+        "id": "circular_mixed_008_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_008_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits second to the right of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 2,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "outside",
+      "D": "center",
+      "E": "center",
+      "F": "outside",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_009",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 9",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_009_clue_07",
+        "text": "B faces the center."
+      },
+      {
+        "id": "circular_mixed_009_clue_02",
+        "text": "E sits third to the right of D."
+      },
+      {
+        "id": "circular_mixed_009_clue_05",
+        "text": "D sits opposite H."
+      },
+      {
+        "id": "circular_mixed_009_clue_03",
+        "text": "F sits immediately to the left of G."
+      },
+      {
+        "id": "circular_mixed_009_clue_01",
+        "text": "D sits second to the left of C."
+      },
+      {
+        "id": "circular_mixed_009_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_009_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_009_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_009_clue_06",
+        "text": "A faces the outside."
+      },
+      {
+        "id": "circular_mixed_009_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_009_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_009_clue_04",
+        "text": "A sits opposite G."
+      },
+      {
+        "id": "circular_mixed_009_clue_13",
+        "text": "H faces the opposite direction as D."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_009_constraint_01",
+        "sourceClueId": "circular_mixed_009_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_009_constraint_02",
+        "sourceClueId": "circular_mixed_009_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_009_constraint_03",
+        "sourceClueId": "circular_mixed_009_clue_03"
+      },
+      {
+        "kind": "opposite",
+        "a": "G",
+        "b": "A",
+        "id": "circular_mixed_009_constraint_04",
+        "sourceClueId": "circular_mixed_009_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "H",
+        "b": "D",
+        "id": "circular_mixed_009_constraint_05",
+        "sourceClueId": "circular_mixed_009_clue_05"
+      },
+      {
+        "id": "circular_mixed_009_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_009_clue_06"
+      },
+      {
+        "id": "circular_mixed_009_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_009_clue_07"
+      },
+      {
+        "id": "circular_mixed_009_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_009_clue_08"
+      },
+      {
+        "id": "circular_mixed_009_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_009_clue_09"
+      },
+      {
+        "id": "circular_mixed_009_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_009_clue_10"
+      },
+      {
+        "id": "circular_mixed_009_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_009_clue_11"
+      },
+      {
+        "id": "circular_mixed_009_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_009_clue_12"
+      },
+      {
+        "id": "circular_mixed_009_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_009_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite A?",
+        "type": "opposite_entity",
+        "reference": "A"
+      },
+      {
+        "prompt": "Who sits second to the right of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 2,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "center",
+      "C": "outside",
+      "D": "outside",
+      "E": "outside",
+      "F": "center",
+      "G": "center",
+      "H": "center"
+    }
+  },
+  {
+    "id": "circular_mixed_010",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 10",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 96,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_010_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_010_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_010_clue_02",
+        "text": "G sits third to the right of D."
+      },
+      {
+        "id": "circular_mixed_010_clue_01",
+        "text": "B sits third to the right of C."
+      },
+      {
+        "id": "circular_mixed_010_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_010_clue_05",
+        "text": "H sits immediately to the left of G."
+      },
+      {
+        "id": "circular_mixed_010_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_010_clue_12",
+        "text": "G faces the same direction as C."
+      },
+      {
+        "id": "circular_mixed_010_clue_07",
+        "text": "B faces the center."
+      },
+      {
+        "id": "circular_mixed_010_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_010_clue_03",
+        "text": "F sits immediately to the left of E."
+      },
+      {
+        "id": "circular_mixed_010_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_010_clue_04",
+        "text": "H sits second to the left of E."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "C",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_010_constraint_01",
+        "sourceClueId": "circular_mixed_010_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "D",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_010_constraint_02",
+        "sourceClueId": "circular_mixed_010_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "E",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_010_constraint_03",
+        "sourceClueId": "circular_mixed_010_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_010_constraint_04",
+        "sourceClueId": "circular_mixed_010_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "G",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_010_constraint_05",
+        "sourceClueId": "circular_mixed_010_clue_05"
+      },
+      {
+        "id": "circular_mixed_010_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_010_clue_06"
+      },
+      {
+        "id": "circular_mixed_010_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_010_clue_07"
+      },
+      {
+        "id": "circular_mixed_010_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_010_clue_08"
+      },
+      {
+        "id": "circular_mixed_010_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_010_clue_09"
+      },
+      {
+        "id": "circular_mixed_010_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_010_clue_10"
+      },
+      {
+        "id": "circular_mixed_010_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_010_clue_11"
+      },
+      {
+        "id": "circular_mixed_010_facerel_G",
+        "kind": "same_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_010_clue_12"
+      },
+      {
+        "id": "circular_mixed_010_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_010_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite A?",
+        "type": "opposite_entity",
+        "reference": "A"
+      },
+      {
+        "prompt": "Who sits immediately to the right of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "center",
+      "C": "center",
+      "D": "outside",
+      "E": "outside",
+      "F": "outside",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_011",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 11",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_011_clue_04",
+        "text": "G sits third to the left of D."
+      },
+      {
+        "id": "circular_mixed_011_clue_03",
+        "text": "D sits second to the left of F."
+      },
+      {
+        "id": "circular_mixed_011_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_011_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_011_clue_05",
+        "text": "H sits third to the left of B."
+      },
+      {
+        "id": "circular_mixed_011_clue_06",
+        "text": "A faces the outside."
+      },
+      {
+        "id": "circular_mixed_011_clue_02",
+        "text": "H sits second to the right of E."
+      },
+      {
+        "id": "circular_mixed_011_clue_01",
+        "text": "E sits opposite C."
+      },
+      {
+        "id": "circular_mixed_011_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_011_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_011_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_011_clue_12",
+        "text": "G faces the same direction as C."
+      },
+      {
+        "id": "circular_mixed_011_clue_11",
+        "text": "F faces the opposite direction as B."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "opposite",
+        "a": "C",
+        "b": "E",
+        "id": "circular_mixed_011_constraint_01",
+        "sourceClueId": "circular_mixed_011_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_011_constraint_02",
+        "sourceClueId": "circular_mixed_011_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "F",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_011_constraint_03",
+        "sourceClueId": "circular_mixed_011_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "D",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_011_constraint_04",
+        "sourceClueId": "circular_mixed_011_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "B",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_011_constraint_05",
+        "sourceClueId": "circular_mixed_011_clue_05"
+      },
+      {
+        "id": "circular_mixed_011_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_011_clue_06"
+      },
+      {
+        "id": "circular_mixed_011_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_011_clue_07"
+      },
+      {
+        "id": "circular_mixed_011_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_011_clue_08"
+      },
+      {
+        "id": "circular_mixed_011_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_011_clue_09"
+      },
+      {
+        "id": "circular_mixed_011_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_011_clue_10"
+      },
+      {
+        "id": "circular_mixed_011_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_011_clue_11"
+      },
+      {
+        "id": "circular_mixed_011_facerel_G",
+        "kind": "same_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_011_clue_12"
+      },
+      {
+        "id": "circular_mixed_011_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_011_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite B?",
+        "type": "opposite_entity",
+        "reference": "B"
+      },
+      {
+        "prompt": "Who sits second to the left of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 2,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "outside",
+      "C": "center",
+      "D": "outside",
+      "E": "outside",
+      "F": "center",
+      "G": "center",
+      "H": "center"
+    }
+  },
+  {
+    "id": "circular_mixed_012",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 12",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 96,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_012_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_012_clue_02",
+        "text": "H sits second to the right of C."
+      },
+      {
+        "id": "circular_mixed_012_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_012_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_012_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_012_clue_04",
+        "text": "E sits immediately to the right of F."
+      },
+      {
+        "id": "circular_mixed_012_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_012_clue_07",
+        "text": "B faces the center."
+      },
+      {
+        "id": "circular_mixed_012_clue_01",
+        "text": "B sits second to the right of G."
+      },
+      {
+        "id": "circular_mixed_012_clue_03",
+        "text": "H sits opposite D."
+      },
+      {
+        "id": "circular_mixed_012_clue_06",
+        "text": "A faces the outside."
+      },
+      {
+        "id": "circular_mixed_012_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_012_clue_05",
+        "text": "F sits opposite G."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "G",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_012_constraint_01",
+        "sourceClueId": "circular_mixed_012_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "C",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_012_constraint_02",
+        "sourceClueId": "circular_mixed_012_clue_02"
+      },
+      {
+        "kind": "opposite",
+        "a": "D",
+        "b": "H",
+        "id": "circular_mixed_012_constraint_03",
+        "sourceClueId": "circular_mixed_012_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_012_constraint_04",
+        "sourceClueId": "circular_mixed_012_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "G",
+        "b": "F",
+        "id": "circular_mixed_012_constraint_05",
+        "sourceClueId": "circular_mixed_012_clue_05"
+      },
+      {
+        "id": "circular_mixed_012_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_012_clue_06"
+      },
+      {
+        "id": "circular_mixed_012_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_012_clue_07"
+      },
+      {
+        "id": "circular_mixed_012_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_012_clue_08"
+      },
+      {
+        "id": "circular_mixed_012_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_012_clue_09"
+      },
+      {
+        "id": "circular_mixed_012_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_012_clue_10"
+      },
+      {
+        "id": "circular_mixed_012_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_012_clue_11"
+      },
+      {
+        "id": "circular_mixed_012_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_012_clue_12"
+      },
+      {
+        "id": "circular_mixed_012_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_012_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the right of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 2,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite G?",
+        "type": "opposite_entity",
+        "reference": "G"
+      },
+      {
+        "prompt": "Who sits immediately to the left of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 1,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "center",
+      "C": "center",
+      "D": "outside",
+      "E": "center",
+      "F": "center",
+      "G": "outside",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_013",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 13",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_013_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_013_clue_04",
+        "text": "G sits immediately to the right of A."
+      },
+      {
+        "id": "circular_mixed_013_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_013_clue_12",
+        "text": "G faces the same direction as C."
+      },
+      {
+        "id": "circular_mixed_013_clue_01",
+        "text": "B sits second to the right of C."
+      },
+      {
+        "id": "circular_mixed_013_clue_05",
+        "text": "A sits second to the right of H."
+      },
+      {
+        "id": "circular_mixed_013_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_013_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_013_clue_03",
+        "text": "F sits second to the right of G."
+      },
+      {
+        "id": "circular_mixed_013_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_013_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_013_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_013_clue_02",
+        "text": "E sits opposite F."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "C",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_013_constraint_01",
+        "sourceClueId": "circular_mixed_013_clue_01"
+      },
+      {
+        "kind": "opposite",
+        "a": "F",
+        "b": "E",
+        "id": "circular_mixed_013_constraint_02",
+        "sourceClueId": "circular_mixed_013_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_013_constraint_03",
+        "sourceClueId": "circular_mixed_013_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "A",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_013_constraint_04",
+        "sourceClueId": "circular_mixed_013_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "H",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_013_constraint_05",
+        "sourceClueId": "circular_mixed_013_clue_05"
+      },
+      {
+        "id": "circular_mixed_013_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_013_clue_06"
+      },
+      {
+        "id": "circular_mixed_013_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_013_clue_07"
+      },
+      {
+        "id": "circular_mixed_013_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_013_clue_08"
+      },
+      {
+        "id": "circular_mixed_013_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_013_clue_09"
+      },
+      {
+        "id": "circular_mixed_013_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_013_clue_10"
+      },
+      {
+        "id": "circular_mixed_013_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_013_clue_11"
+      },
+      {
+        "id": "circular_mixed_013_facerel_G",
+        "kind": "same_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_013_clue_12"
+      },
+      {
+        "id": "circular_mixed_013_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_013_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the left of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 1,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite B?",
+        "type": "opposite_entity",
+        "reference": "B"
+      },
+      {
+        "prompt": "Who sits immediately to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 1,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "outside",
+      "D": "center",
+      "E": "center",
+      "F": "outside",
+      "G": "outside",
+      "H": "center"
+    }
+  },
+  {
+    "id": "circular_mixed_014",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 14",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_014_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_014_clue_03",
+        "text": "H sits immediately to the right of E."
+      },
+      {
+        "id": "circular_mixed_014_clue_01",
+        "text": "E sits second to the left of B."
+      },
+      {
+        "id": "circular_mixed_014_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_014_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_014_clue_05",
+        "text": "H sits second to the left of G."
+      },
+      {
+        "id": "circular_mixed_014_clue_06",
+        "text": "A faces the outside."
+      },
+      {
+        "id": "circular_mixed_014_clue_04",
+        "text": "G sits opposite F."
+      },
+      {
+        "id": "circular_mixed_014_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_014_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_014_clue_02",
+        "text": "C sits immediately to the left of D."
+      },
+      {
+        "id": "circular_mixed_014_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_014_clue_09",
+        "text": "D faces the center."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "B",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_014_constraint_01",
+        "sourceClueId": "circular_mixed_014_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "D",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_014_constraint_02",
+        "sourceClueId": "circular_mixed_014_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_014_constraint_03",
+        "sourceClueId": "circular_mixed_014_clue_03"
+      },
+      {
+        "kind": "opposite",
+        "a": "F",
+        "b": "G",
+        "id": "circular_mixed_014_constraint_04",
+        "sourceClueId": "circular_mixed_014_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "G",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_014_constraint_05",
+        "sourceClueId": "circular_mixed_014_clue_05"
+      },
+      {
+        "id": "circular_mixed_014_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_014_clue_06"
+      },
+      {
+        "id": "circular_mixed_014_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_014_clue_07"
+      },
+      {
+        "id": "circular_mixed_014_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_014_clue_08"
+      },
+      {
+        "id": "circular_mixed_014_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_014_clue_09"
+      },
+      {
+        "id": "circular_mixed_014_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_014_clue_10"
+      },
+      {
+        "id": "circular_mixed_014_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_014_clue_11"
+      },
+      {
+        "id": "circular_mixed_014_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_014_clue_12"
+      },
+      {
+        "id": "circular_mixed_014_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_014_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite B?",
+        "type": "opposite_entity",
+        "reference": "B"
+      },
+      {
+        "prompt": "Who sits second to the left of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "outside",
+      "C": "outside",
+      "D": "center",
+      "E": "center",
+      "F": "center",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_015",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 15",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 94,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_015_clue_01",
+        "text": "A sits second to the right of F."
+      },
+      {
+        "id": "circular_mixed_015_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_015_clue_02",
+        "text": "G sits third to the left of B."
+      },
+      {
+        "id": "circular_mixed_015_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_015_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_015_clue_07",
+        "text": "B faces the center."
+      },
+      {
+        "id": "circular_mixed_015_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_015_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_015_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_015_clue_04",
+        "text": "C sits third to the left of D."
+      },
+      {
+        "id": "circular_mixed_015_clue_03",
+        "text": "B sits second to the left of D."
+      },
+      {
+        "id": "circular_mixed_015_clue_05",
+        "text": "C sits second to the left of H."
+      },
+      {
+        "id": "circular_mixed_015_clue_06",
+        "text": "A faces the center."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_015_constraint_01",
+        "sourceClueId": "circular_mixed_015_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "B",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_015_constraint_02",
+        "sourceClueId": "circular_mixed_015_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "B",
+        "reference": "D",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_015_constraint_03",
+        "sourceClueId": "circular_mixed_015_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "D",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_015_constraint_04",
+        "sourceClueId": "circular_mixed_015_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_015_constraint_05",
+        "sourceClueId": "circular_mixed_015_clue_05"
+      },
+      {
+        "id": "circular_mixed_015_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_015_clue_06"
+      },
+      {
+        "id": "circular_mixed_015_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_015_clue_07"
+      },
+      {
+        "id": "circular_mixed_015_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_015_clue_08"
+      },
+      {
+        "id": "circular_mixed_015_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_015_clue_09"
+      },
+      {
+        "id": "circular_mixed_015_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_015_clue_10"
+      },
+      {
+        "id": "circular_mixed_015_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_015_clue_11"
+      },
+      {
+        "id": "circular_mixed_015_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_015_clue_12"
+      },
+      {
+        "id": "circular_mixed_015_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_015_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the left of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 1,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite B?",
+        "type": "opposite_entity",
+        "reference": "B"
+      },
+      {
+        "prompt": "Who sits immediately to the right of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 1,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "center",
+      "C": "center",
+      "D": "outside",
+      "E": "outside",
+      "F": "center",
+      "G": "outside",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_016",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 16",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 96,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_016_clue_04",
+        "text": "E sits second to the left of A."
+      },
+      {
+        "id": "circular_mixed_016_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_016_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_016_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_016_clue_01",
+        "text": "D sits opposite C."
+      },
+      {
+        "id": "circular_mixed_016_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_016_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_016_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_016_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_016_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_016_clue_03",
+        "text": "G sits immediately to the left of A."
+      },
+      {
+        "id": "circular_mixed_016_clue_05",
+        "text": "H sits third to the left of E."
+      },
+      {
+        "id": "circular_mixed_016_clue_02",
+        "text": "F sits third to the right of C."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "opposite",
+        "a": "C",
+        "b": "D",
+        "id": "circular_mixed_016_constraint_01",
+        "sourceClueId": "circular_mixed_016_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "C",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_016_constraint_02",
+        "sourceClueId": "circular_mixed_016_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "A",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_016_constraint_03",
+        "sourceClueId": "circular_mixed_016_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "A",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_016_constraint_04",
+        "sourceClueId": "circular_mixed_016_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_016_constraint_05",
+        "sourceClueId": "circular_mixed_016_clue_05"
+      },
+      {
+        "id": "circular_mixed_016_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_016_clue_06"
+      },
+      {
+        "id": "circular_mixed_016_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_016_clue_07"
+      },
+      {
+        "id": "circular_mixed_016_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_016_clue_08"
+      },
+      {
+        "id": "circular_mixed_016_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_016_clue_09"
+      },
+      {
+        "id": "circular_mixed_016_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_016_clue_10"
+      },
+      {
+        "id": "circular_mixed_016_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_016_clue_11"
+      },
+      {
+        "id": "circular_mixed_016_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_016_clue_12"
+      },
+      {
+        "id": "circular_mixed_016_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_016_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits second to the left of H?",
+        "type": "relative_entity",
+        "reference": "H",
+        "steps": 2,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite C?",
+        "type": "opposite_entity",
+        "reference": "C"
+      },
+      {
+        "prompt": "Who sits immediately to the right of D?",
+        "type": "relative_entity",
+        "reference": "D",
+        "steps": 1,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "outside",
+      "D": "center",
+      "E": "center",
+      "F": "outside",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_017",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 17",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 94,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_017_clue_05",
+        "text": "A sits third to the right of H."
+      },
+      {
+        "id": "circular_mixed_017_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_017_clue_03",
+        "text": "G sits third to the right of B."
+      },
+      {
+        "id": "circular_mixed_017_clue_04",
+        "text": "A sits opposite B."
+      },
+      {
+        "id": "circular_mixed_017_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_017_clue_02",
+        "text": "E sits immediately to the left of F."
+      },
+      {
+        "id": "circular_mixed_017_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_017_clue_07",
+        "text": "B faces the center."
+      },
+      {
+        "id": "circular_mixed_017_clue_13",
+        "text": "H faces the same direction as D."
+      },
+      {
+        "id": "circular_mixed_017_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_017_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_017_clue_01",
+        "text": "D sits third to the left of H."
+      },
+      {
+        "id": "circular_mixed_017_clue_10",
+        "text": "E faces the opposite direction as A."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "H",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_017_constraint_01",
+        "sourceClueId": "circular_mixed_017_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "F",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_017_constraint_02",
+        "sourceClueId": "circular_mixed_017_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "B",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_017_constraint_03",
+        "sourceClueId": "circular_mixed_017_clue_03"
+      },
+      {
+        "kind": "opposite",
+        "a": "B",
+        "b": "A",
+        "id": "circular_mixed_017_constraint_04",
+        "sourceClueId": "circular_mixed_017_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "H",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_017_constraint_05",
+        "sourceClueId": "circular_mixed_017_clue_05"
+      },
+      {
+        "id": "circular_mixed_017_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_017_clue_06"
+      },
+      {
+        "id": "circular_mixed_017_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_017_clue_07"
+      },
+      {
+        "id": "circular_mixed_017_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_017_clue_08"
+      },
+      {
+        "id": "circular_mixed_017_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_017_clue_09"
+      },
+      {
+        "id": "circular_mixed_017_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_017_clue_10"
+      },
+      {
+        "id": "circular_mixed_017_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_017_clue_11"
+      },
+      {
+        "id": "circular_mixed_017_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_017_clue_12"
+      },
+      {
+        "id": "circular_mixed_017_facerel_H",
+        "kind": "same_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_017_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the left of C?",
+        "type": "relative_entity",
+        "reference": "C",
+        "steps": 1,
+        "direction": "left"
+      },
+      {
+        "prompt": "Who sits opposite H?",
+        "type": "opposite_entity",
+        "reference": "H"
+      },
+      {
+        "prompt": "Who sits second to the left of F?",
+        "type": "relative_entity",
+        "reference": "F",
+        "steps": 2,
+        "direction": "left"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "center",
+      "C": "center",
+      "D": "outside",
+      "E": "outside",
+      "F": "center",
+      "G": "outside",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_018",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 18",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 96,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_018_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_018_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_018_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_018_clue_01",
+        "text": "D sits second to the right of B."
+      },
+      {
+        "id": "circular_mixed_018_clue_04",
+        "text": "H sits second to the right of F."
+      },
+      {
+        "id": "circular_mixed_018_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_018_clue_03",
+        "text": "F sits third to the right of B."
+      },
+      {
+        "id": "circular_mixed_018_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_018_clue_02",
+        "text": "E sits third to the left of C."
+      },
+      {
+        "id": "circular_mixed_018_clue_09",
+        "text": "D faces the outside."
+      },
+      {
+        "id": "circular_mixed_018_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_018_clue_10",
+        "text": "E faces the same direction as A."
+      },
+      {
+        "id": "circular_mixed_018_clue_05",
+        "text": "H sits opposite G."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "B",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_018_constraint_01",
+        "sourceClueId": "circular_mixed_018_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "C",
+        "steps": 3,
+        "direction": "left",
+        "id": "circular_mixed_018_constraint_02",
+        "sourceClueId": "circular_mixed_018_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "B",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_018_constraint_03",
+        "sourceClueId": "circular_mixed_018_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_018_constraint_04",
+        "sourceClueId": "circular_mixed_018_clue_04"
+      },
+      {
+        "kind": "opposite",
+        "a": "G",
+        "b": "H",
+        "id": "circular_mixed_018_constraint_05",
+        "sourceClueId": "circular_mixed_018_clue_05"
+      },
+      {
+        "id": "circular_mixed_018_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_018_clue_06"
+      },
+      {
+        "id": "circular_mixed_018_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_018_clue_07"
+      },
+      {
+        "id": "circular_mixed_018_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_018_clue_08"
+      },
+      {
+        "id": "circular_mixed_018_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_018_clue_09"
+      },
+      {
+        "id": "circular_mixed_018_facerel_E",
+        "kind": "same_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_018_clue_10"
+      },
+      {
+        "id": "circular_mixed_018_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_018_clue_11"
+      },
+      {
+        "id": "circular_mixed_018_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_018_clue_12"
+      },
+      {
+        "id": "circular_mixed_018_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_018_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of C?",
+        "type": "relative_entity",
+        "reference": "C",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite F?",
+        "type": "opposite_entity",
+        "reference": "F"
+      },
+      {
+        "prompt": "Who sits second to the right of E?",
+        "type": "relative_entity",
+        "reference": "E",
+        "steps": 2,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "outside",
+      "D": "outside",
+      "E": "center",
+      "F": "outside",
+      "G": "center",
+      "H": "center"
+    }
+  },
+  {
+    "id": "circular_mixed_019",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 19",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 98,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_019_clue_05",
+        "text": "H sits second to the left of E."
+      },
+      {
+        "id": "circular_mixed_019_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_019_clue_07",
+        "text": "B faces the outside."
+      },
+      {
+        "id": "circular_mixed_019_clue_03",
+        "text": "B sits opposite G."
+      },
+      {
+        "id": "circular_mixed_019_clue_01",
+        "text": "D sits second to the right of C."
+      },
+      {
+        "id": "circular_mixed_019_clue_11",
+        "text": "F faces the same direction as B."
+      },
+      {
+        "id": "circular_mixed_019_clue_08",
+        "text": "C faces the center."
+      },
+      {
+        "id": "circular_mixed_019_clue_06",
+        "text": "A faces the center."
+      },
+      {
+        "id": "circular_mixed_019_clue_04",
+        "text": "E sits immediately to the left of B."
+      },
+      {
+        "id": "circular_mixed_019_clue_12",
+        "text": "G faces the same direction as C."
+      },
+      {
+        "id": "circular_mixed_019_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_019_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_019_clue_02",
+        "text": "F sits third to the right of E."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "C",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_019_constraint_01",
+        "sourceClueId": "circular_mixed_019_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "E",
+        "steps": 3,
+        "direction": "right",
+        "id": "circular_mixed_019_constraint_02",
+        "sourceClueId": "circular_mixed_019_clue_02"
+      },
+      {
+        "kind": "opposite",
+        "a": "G",
+        "b": "B",
+        "id": "circular_mixed_019_constraint_03",
+        "sourceClueId": "circular_mixed_019_clue_03"
+      },
+      {
+        "kind": "relative",
+        "subject": "E",
+        "reference": "B",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_019_constraint_04",
+        "sourceClueId": "circular_mixed_019_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "E",
+        "steps": 2,
+        "direction": "left",
+        "id": "circular_mixed_019_constraint_05",
+        "sourceClueId": "circular_mixed_019_clue_05"
+      },
+      {
+        "id": "circular_mixed_019_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_019_clue_06"
+      },
+      {
+        "id": "circular_mixed_019_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_019_clue_07"
+      },
+      {
+        "id": "circular_mixed_019_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_019_clue_08"
+      },
+      {
+        "id": "circular_mixed_019_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_019_clue_09"
+      },
+      {
+        "id": "circular_mixed_019_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_019_clue_10"
+      },
+      {
+        "id": "circular_mixed_019_facerel_F",
+        "kind": "same_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_019_clue_11"
+      },
+      {
+        "id": "circular_mixed_019_facerel_G",
+        "kind": "same_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_019_clue_12"
+      },
+      {
+        "id": "circular_mixed_019_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_019_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of B?",
+        "type": "relative_entity",
+        "reference": "B",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite H?",
+        "type": "opposite_entity",
+        "reference": "H"
+      },
+      {
+        "prompt": "Who sits immediately to the right of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 1,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "center",
+      "B": "outside",
+      "C": "center",
+      "D": "center",
+      "E": "outside",
+      "F": "outside",
+      "G": "center",
+      "H": "outside"
+    }
+  },
+  {
+    "id": "circular_mixed_020",
+    "mode": "mixed",
+    "title": "Mixed Circular Challenge 20",
+    "subtitle": "Hard PO Prelims \u00b7 validated minimal clue set",
+    "difficulty": "Hard PO Prelims",
+    "qualityScore": 94,
+    "facing": "mixed",
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H"
+    ],
+    "clues": [
+      {
+        "id": "circular_mixed_020_clue_02",
+        "text": "C sits immediately to the left of B."
+      },
+      {
+        "id": "circular_mixed_020_clue_10",
+        "text": "E faces the opposite direction as A."
+      },
+      {
+        "id": "circular_mixed_020_clue_09",
+        "text": "D faces the center."
+      },
+      {
+        "id": "circular_mixed_020_clue_12",
+        "text": "G faces the opposite direction as C."
+      },
+      {
+        "id": "circular_mixed_020_clue_03",
+        "text": "G sits second to the right of C."
+      },
+      {
+        "id": "circular_mixed_020_clue_06",
+        "text": "A faces the outside."
+      },
+      {
+        "id": "circular_mixed_020_clue_11",
+        "text": "F faces the opposite direction as B."
+      },
+      {
+        "id": "circular_mixed_020_clue_13",
+        "text": "H faces the opposite direction as D."
+      },
+      {
+        "id": "circular_mixed_020_clue_08",
+        "text": "C faces the outside."
+      },
+      {
+        "id": "circular_mixed_020_clue_04",
+        "text": "D sits opposite F."
+      },
+      {
+        "id": "circular_mixed_020_clue_07",
+        "text": "B faces the center."
+      },
+      {
+        "id": "circular_mixed_020_clue_05",
+        "text": "H sits immediately to the right of F."
+      },
+      {
+        "id": "circular_mixed_020_clue_01",
+        "text": "E sits opposite B."
+      }
+    ],
+    "constraints": [
+      {
+        "kind": "opposite",
+        "a": "B",
+        "b": "E",
+        "id": "circular_mixed_020_constraint_01",
+        "sourceClueId": "circular_mixed_020_clue_01"
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "B",
+        "steps": 1,
+        "direction": "left",
+        "id": "circular_mixed_020_constraint_02",
+        "sourceClueId": "circular_mixed_020_clue_02"
+      },
+      {
+        "kind": "relative",
+        "subject": "G",
+        "reference": "C",
+        "steps": 2,
+        "direction": "right",
+        "id": "circular_mixed_020_constraint_03",
+        "sourceClueId": "circular_mixed_020_clue_03"
+      },
+      {
+        "kind": "opposite",
+        "a": "F",
+        "b": "D",
+        "id": "circular_mixed_020_constraint_04",
+        "sourceClueId": "circular_mixed_020_clue_04"
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "steps": 1,
+        "direction": "right",
+        "id": "circular_mixed_020_constraint_05",
+        "sourceClueId": "circular_mixed_020_clue_05"
+      },
+      {
+        "id": "circular_mixed_020_face_A",
+        "kind": "facing",
+        "subject": "A",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_020_clue_06"
+      },
+      {
+        "id": "circular_mixed_020_face_B",
+        "kind": "facing",
+        "subject": "B",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_020_clue_07"
+      },
+      {
+        "id": "circular_mixed_020_face_C",
+        "kind": "facing",
+        "subject": "C",
+        "facing": "outside",
+        "sourceClueId": "circular_mixed_020_clue_08"
+      },
+      {
+        "id": "circular_mixed_020_face_D",
+        "kind": "facing",
+        "subject": "D",
+        "facing": "center",
+        "sourceClueId": "circular_mixed_020_clue_09"
+      },
+      {
+        "id": "circular_mixed_020_facerel_E",
+        "kind": "opposite_facing",
+        "subject": "E",
+        "reference": "A",
+        "sourceClueId": "circular_mixed_020_clue_10"
+      },
+      {
+        "id": "circular_mixed_020_facerel_F",
+        "kind": "opposite_facing",
+        "subject": "F",
+        "reference": "B",
+        "sourceClueId": "circular_mixed_020_clue_11"
+      },
+      {
+        "id": "circular_mixed_020_facerel_G",
+        "kind": "opposite_facing",
+        "subject": "G",
+        "reference": "C",
+        "sourceClueId": "circular_mixed_020_clue_12"
+      },
+      {
+        "id": "circular_mixed_020_facerel_H",
+        "kind": "opposite_facing",
+        "subject": "H",
+        "reference": "D",
+        "sourceClueId": "circular_mixed_020_clue_13"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Who sits immediately to the right of A?",
+        "type": "relative_entity",
+        "reference": "A",
+        "steps": 1,
+        "direction": "right"
+      },
+      {
+        "prompt": "Who sits opposite F?",
+        "type": "opposite_entity",
+        "reference": "F"
+      },
+      {
+        "prompt": "Who sits immediately to the right of G?",
+        "type": "relative_entity",
+        "reference": "G",
+        "steps": 1,
+        "direction": "right"
+      }
+    ],
+    "solutionFacing": {
+      "A": "outside",
+      "B": "center",
+      "C": "outside",
+      "D": "center",
+      "E": "center",
+      "F": "outside",
+      "G": "center",
+      "H": "outside"
+    }
+  }
+]

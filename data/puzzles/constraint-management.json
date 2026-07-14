@@ -1,0 +1,397 @@
+[
+  {
+    "id": "cm01",
+    "title": "Fixed Anchor",
+    "difficulty": 2,
+    "slots": 8,
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "clues": [
+      "B sits at position 3.",
+      "A sits second to the right of B.",
+      "C sits immediately to the left of A.",
+      "D is not adjacent to B."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "B",
+        "position": 2,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "offset": 2,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "C",
+        "reference": "A",
+        "offset": -1,
+        "clueIndex": 2
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "D",
+        "b": "B",
+        "clueIndex": 3
+      }
+    ],
+    "skills": [
+      "fixed_position_reasoning",
+      "clue_prioritization",
+      "negative_constraint_handling"
+    ],
+    "explanation": "Anchor B, build A and C, then apply D's negative restriction.",
+    "hints": [
+      "Start with B.",
+      "Attach A.",
+      "Then C.",
+      "Use the negative clue last."
+    ],
+    "estimatedTime": 120,
+    "priority": {
+      "best": [
+        0
+      ],
+      "explanation": "A fixed position is the strongest absolute anchor."
+    }
+  },
+  {
+    "id": "cm02",
+    "title": "Negative Constraint",
+    "difficulty": 2,
+    "slots": 8,
+    "entities": [
+      "P",
+      "Q",
+      "R",
+      "S"
+    ],
+    "clues": [
+      "Q sits at position 4.",
+      "P sits immediately left of Q.",
+      "S sits second to the right of P.",
+      "R is not adjacent to Q."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "Q",
+        "position": 3,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "P",
+        "reference": "Q",
+        "offset": -1,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "S",
+        "reference": "P",
+        "offset": 2,
+        "clueIndex": 2
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "R",
+        "b": "Q",
+        "clueIndex": 3
+      }
+    ],
+    "skills": [
+      "negative_constraint_handling",
+      "constraint_integration"
+    ],
+    "explanation": "Place deterministic relationships before flexible negative information.",
+    "hints": [
+      "Fix Q.",
+      "Place P.",
+      "Place S.",
+      "Restrict R last."
+    ],
+    "estimatedTime": 120,
+    "priority": {
+      "best": [
+        0,
+        1
+      ],
+      "explanation": "The fixed anchor and its directly linked clue reduce uncertainty fastest."
+    }
+  },
+  {
+    "id": "cm03",
+    "title": "Contradiction Hunt",
+    "difficulty": 3,
+    "slots": 8,
+    "entities": [
+      "H",
+      "J",
+      "K"
+    ],
+    "clues": [
+      "J sits third to the right of H.",
+      "K sits immediately to the left of J.",
+      "K sits immediately to the right of H."
+    ],
+    "constraints": [
+      {
+        "kind": "relative",
+        "subject": "J",
+        "reference": "H",
+        "offset": 3,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "K",
+        "reference": "J",
+        "offset": -1,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "K",
+        "reference": "H",
+        "offset": 1,
+        "clueIndex": 2
+      }
+    ],
+    "skills": [
+      "contradiction_detection",
+      "chain_inference"
+    ],
+    "explanation": "The first two clues imply K is second right of H, contradicting the third clue.",
+    "hints": [
+      "Combine clues 1 and 2.",
+      "Derive K relative to H.",
+      "Compare with clue 3."
+    ],
+    "estimatedTime": 135,
+    "mode": "contradiction"
+  },
+  {
+    "id": "cm04",
+    "title": "Either-Or Branch",
+    "difficulty": 3,
+    "slots": 8,
+    "entities": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "clues": [
+      "B sits at position 4.",
+      "A sits second to the left of B.",
+      "C sits either immediately left or immediately right of A.",
+      "D sits immediately to the right of B."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "B",
+        "position": 3,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "A",
+        "reference": "B",
+        "offset": -2,
+        "clueIndex": 1
+      },
+      {
+        "kind": "either_relative",
+        "subject": "C",
+        "reference": "A",
+        "offsets": [
+          -1,
+          1
+        ],
+        "clueIndex": 2
+      },
+      {
+        "kind": "relative",
+        "subject": "D",
+        "reference": "B",
+        "offset": 1,
+        "clueIndex": 3
+      }
+    ],
+    "skills": [
+      "case_management",
+      "clue_prioritization"
+    ],
+    "explanation": "Resolve B, A and D before branching only for C.",
+    "hints": [
+      "Fix B.",
+      "Place A and D.",
+      "Only C creates cases."
+    ],
+    "estimatedTime": 135,
+    "priority": {
+      "best": [
+        0,
+        1
+      ],
+      "explanation": "Resolve deterministic clues before creating cases."
+    }
+  },
+  {
+    "id": "cm05",
+    "title": "Boundary Pruning",
+    "difficulty": 4,
+    "slots": 7,
+    "entities": [
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "clues": [
+      "X sits at position 2.",
+      "Y sits either second left or second right of X.",
+      "Z sits immediately to the right of Y.",
+      "W is not adjacent to Z."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "X",
+        "position": 1,
+        "clueIndex": 0
+      },
+      {
+        "kind": "either_relative",
+        "subject": "Y",
+        "reference": "X",
+        "offsets": [
+          -2,
+          2
+        ],
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "Z",
+        "reference": "Y",
+        "offset": 1,
+        "clueIndex": 2
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "W",
+        "b": "Z",
+        "clueIndex": 3
+      }
+    ],
+    "skills": [
+      "case_management",
+      "contradiction_detection"
+    ],
+    "explanation": "The left Y branch falls outside the board, so prune it immediately.",
+    "hints": [
+      "Fix X.",
+      "Test Y against boundaries.",
+      "Reject impossible branches.",
+      "Then place Z and W."
+    ],
+    "estimatedTime": 150,
+    "priority": {
+      "best": [
+        0,
+        1
+      ],
+      "explanation": "A fixed anchor lets you test and prune branches immediately."
+    }
+  },
+  {
+    "id": "cm06",
+    "title": "Composite Constraints",
+    "difficulty": 4,
+    "slots": 10,
+    "entities": [
+      "E",
+      "F",
+      "G",
+      "H",
+      "J"
+    ],
+    "clues": [
+      "G sits at position 6.",
+      "F sits second to the left of G.",
+      "H sits immediately to the right of F.",
+      "E is not adjacent to G.",
+      "J sits either immediately left or immediately right of E."
+    ],
+    "constraints": [
+      {
+        "kind": "fixed",
+        "entity": "G",
+        "position": 5,
+        "clueIndex": 0
+      },
+      {
+        "kind": "relative",
+        "subject": "F",
+        "reference": "G",
+        "offset": -2,
+        "clueIndex": 1
+      },
+      {
+        "kind": "relative",
+        "subject": "H",
+        "reference": "F",
+        "offset": 1,
+        "clueIndex": 2
+      },
+      {
+        "kind": "not_adjacent",
+        "a": "E",
+        "b": "G",
+        "clueIndex": 3
+      },
+      {
+        "kind": "either_relative",
+        "subject": "J",
+        "reference": "E",
+        "offsets": [
+          -1,
+          1
+        ],
+        "clueIndex": 4
+      }
+    ],
+    "skills": [
+      "constraint_integration",
+      "case_management",
+      "negative_constraint_handling"
+    ],
+    "explanation": "Build G-F-H first, then handle flexible E-J possibilities.",
+    "hints": [
+      "Build the fixed chain.",
+      "Delay E-J.",
+      "Keep E away from G.",
+      "Attach J to E."
+    ],
+    "estimatedTime": 150,
+    "priority": {
+      "best": [
+        0,
+        1
+      ],
+      "explanation": "Build the deterministic connected chain before flexible constraints."
+    }
+  }
+]

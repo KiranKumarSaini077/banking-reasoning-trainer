@@ -1,0 +1,10 @@
+{
+  "name": "ReasonForge PO Reasoning Trainer",
+  "short_name": "ReasonForge",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#6d5dfc",
+  "description": "Structured Bank PO reasoning skill training.",
+  "icons": []
+}

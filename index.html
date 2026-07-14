@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-theme="focus-light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d5dfc">
+  <meta name="description" content="A structured Bank PO reasoning and cognitive-skill training system.">
+  <title>ReasonForge PO</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./css/bundle.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div id="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">RF</div>
+        <div><strong>ReasonForge</strong><span>PO Trainer</span></div>
+      </div>
+      <nav id="primary-nav"></nav>
+      <div class="sidebar-footer">
+        <div class="mini-stat"><span>Local-first</span><strong>Offline ready</strong></div>
+      </div>
+    </aside>
+
+    <header class="topbar">
+      <button id="menu-toggle" class="icon-button mobile-only" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div>
+        <p class="eyebrow" id="page-eyebrow">TRAINING SYSTEM</p>
+        <h1 id="page-title">Dashboard</h1>
+      </div>
+      <div class="topbar-actions">
+        <label class="sr-only" for="quick-theme">Theme</label>
+        <select id="quick-theme" class="compact-select" aria-label="Theme"></select>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div id="view" class="view-container" aria-live="polite"></div>
+    </main>
+  </div>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+  <script>
+  (function(){
+    function showStartupError(title,message){
+      var view=document.getElementById('view');
+      if(!view)return;
+      view.innerHTML='<div class="card empty-state startup-error"><p class="eyebrow">STARTUP DIAGNOSTIC</p><h2>'+title+'</h2><p>'+message+'</p><div class="hero-actions"><button class="button" onclick="location.reload()">Retry</button></div></div>';
+    }
+    window.addEventListener('reasonforge:fatal',function(event){
+      showStartupError('The application could not start.',event.detail&&event.detail.message?event.detail.message:'Unknown startup error. Check the browser console.');
+    });
+    window.addEventListener('error',function(event){
+      if(!window.__REASONFORGE_STARTED__)showStartupError('A startup script failed.',event.message||'Check the browser console for details.');
+    });
+    setTimeout(function(){
+      if(window.__REASONFORGE_STARTED__)return;
+      if(location.protocol==='file:'){
+        showStartupError('Open ReasonForge with START_APP.vbs','This app uses secure browser modules, JSON data loading, IndexedDB, and offline caching. Browsers block key parts when index.html is opened directly with file://. Close this tab and double-click START_APP.vbs in the project folder.');
+      }else if(!window.__REASONFORGE_BOOT_ERROR__){
+        showStartupError('The app did not finish starting.','A module may have been blocked or an old Service Worker may be cached. Hard-refresh the page once. If the issue remains, open the browser console.');
+      }
+    },2500);
+  })();
+  </script>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
