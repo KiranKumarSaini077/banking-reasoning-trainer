@@ -1,2 +1,0 @@
-export function median(values){if(!values.length)return 0;const a=[...values].sort((x,y)=>x-y),m=Math.floor(a.length/2);return a.length%2?a[m]:(a[m-1]+a[m])/2}
-export function pct(n,d){return d?Math.round(n/d*100):0}
